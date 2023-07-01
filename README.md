@@ -21,7 +21,7 @@ Gente interesada por economías de recirculación y reciclado, con interés en a
 - https://www.mercadolibre.com.ar/
 - https://www.penguinlibros.com/ar/
 - https://www.truekeo.com/
--
+- https://www.copiart.com.ar/
 -
 
 #  Grupo 2: Integrantes
