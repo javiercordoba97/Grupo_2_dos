@@ -22,7 +22,10 @@ Gente interesada por economías de recirculación y reciclado, con interés en a
 - https://www.penguinlibros.com/ar/
 - https://www.truekeo.com/
 - https://www.copiart.com.ar/
--
+- https://www.soygamerargentina.com/
+
+Las siguientes páginas web fueron seleccionadas por ser referentes en el área de e-commerce, por comerciar con artículos similares o por presentar diseños web similares al que aspiramos implementar. Las usaremos como referencias y punto de partida para el desarrollo de nuestra página.
+
 
 #  Grupo 2: Integrantes
 
@@ -33,5 +36,7 @@ Gente interesada por economías de recirculación y reciclado, con interés en a
 ### Lucas Botto
 
 ### Guido Salustri
+
+Estudié Biología en la UBA y a lo largo de la carrera me interesé por la bioinformatica que es en el área donde termine haciendo mi especialización. Trabajé un tiempo en el INTA y renuncié para irme a vivir a Australia donde estuve viviendo 3 años. Recientemente volví a la Argentina con la intención de obtener más conocimientos en programación y desarrollo.
 
 ### Lucas Marandino
