@@ -31,6 +31,8 @@ Las siguientes páginas web fueron seleccionadas por ser referentes en el área 
 
 ### Nicolas Ezcurra
 
+Descrpción pendiente
+
 ### Javier Cordoba
 
 ### Lucas Botto
