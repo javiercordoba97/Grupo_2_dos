@@ -35,6 +35,8 @@ Descrpción pendiente
 
 ### Javier Cordoba
 
+Actualmente trabajo como administrativo, estuve un año viviendo en Alemania. Ahí realicé diversos tipos de trabajos y pude darme el lujo de recorrer y conocer una cultura completamente diferente. Me gusta jugar al futbol y soy un poco gamer.
+
 ### Lucas Botto
 
 ### Guido Salustri
