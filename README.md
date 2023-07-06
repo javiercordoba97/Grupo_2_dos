@@ -39,7 +39,7 @@ Actualmente trabajo como administrativo, estuve un año viviendo en Alemania. Ah
 
 ### Lucas Botto
 
-Estudiante de Fullstack, Técnico Mecánico. Actualmente soy agente Inmobiliario, paralelamnete tengo un emprendimiento hace mas de diez años de productos artesanales regionakles Mercedinos (Salames Quinetros, Quesos Gourmet Franceces, Suizos y de Campo). Me gustan los deportes y la lectura.
+Estudiante de Fullstack, Técnico Mecánico. Actualmente soy agente Inmobiliario, paralelamnete tengo un emprendimiento hace mas de diez años de productos artesanales regionales Mercedinos (Salames Quinetros, Quesos Gourmet Franceces, Suizos y de Campo). Me gustan los deportes y la lectura.
 
 ### Guido Salustri
 
