@@ -39,6 +39,8 @@ Actualmente trabajo como administrativo, estuve un año viviendo en Alemania. Ah
 
 ### Lucas Botto
 
+Estudiante de Fullstack, Técnico Mecánico. Actualmente soy agente Inmobiliario, paralelamnete tengo un emprendimiento hace mas de diez años de productos artesanales regionakles Mercedinos (Salames Quinetros, Quesos Gourmet Franceces, Suizos y de Campo). Me gustan los deportes y la lectura.
+
 ### Guido Salustri
 
 Estudié Biología en la UBA y a lo largo de la carrera me interesé por la bioinformatica que es en el área donde termine haciendo mi especialización. Trabajé un tiempo en el INTA y renuncié para irme a vivir a Australia donde estuve viviendo 3 años. Recientemente volví a la Argentina con la intención de obtener más conocimientos en programación y desarrollo.
