@@ -31,7 +31,8 @@ Las siguientes páginas web fueron seleccionadas por ser referentes en el área 
 
 ### Nicolas Ezcurra
 
-Descrpción pendiente
+Trabajo como supervisor de operaciones en una empresa gerenciadora de riesgo. Paralelamente trabajé como community manager y creador de contenido. Estudiar Full Stack es algo que me atraía, pero fueron estas ultimas experiencias las que me ayudaron a tomar la decisión de empezar con los estudios. 
+
 
 ### Javier Cordoba
 
