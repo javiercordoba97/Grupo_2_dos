@@ -47,3 +47,5 @@ Estudiante de Fullstack, Técnico Mecánico, vivo en San Miguel. Actualmente soy
 Estudié Biología en la UBA y a lo largo de la carrera me interesé por la bioinformatica que es en el área donde termine haciendo mi especialización. Trabajé un tiempo en el INTA y renuncié para irme a vivir a Australia donde estuve viviendo 3 años. Recientemente volví a la Argentina con la intención de obtener más conocimientos en programación y desarrollo.
 
 ### Lucas Marandino
+
+Actualmente tengo 22 años y trabajo como empleado de comercio, vivo en Muñiz. Al mismo tiempo, realizo un curso sobre Diseño UX y realice un curso sobre HTML y CSS anterior a este. Ahi descubri un poco sobre este mundo y el gusto que le tengo. Ademas soy bastante fan de la musica, los deportes y los videojuegos.
