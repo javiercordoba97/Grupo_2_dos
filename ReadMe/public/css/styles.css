@@ -1,0 +1,207 @@
+:root{
+    --Blanco: #f2f6f9;
+    --Celeste: #7fb1d9;
+    --Azul: #144799;
+    --Azul-marino: #0f3877;
+    --Azul-francia: #0c2c55;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--Gris-claro);
+
+}
+
+/*__________________HEADER______________________*/
+header{
+    background-color: var(--Celeste);
+}
+.header1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+.busq{
+    width: 48%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 20%;
+    margin-right: 5px;
+}
+.input{
+    width:90%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--Gris-oscuro);
+
+}
+.ico i{
+    padding-left: 12px;
+    padding-top: 1px;
+    height: 20px;
+    background-color: #fff;
+    border-left: solid 1px var(--Gris-oscuro);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.pago{
+    text-align: center;
+}
+
+header nav{
+    display: none;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: var(--Celeste);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px ;
+    margin: 10px 0 20px 0;
+}
+
+/*__________________MAIN______________________*/
+main{
+    width:90vw;
+    margin: auto;
+}
+article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+article img{
+    width:100%;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-info{
+    border-top: 1px solid var(--Gris-claro);
+    width: 100%;
+    padding:15px;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+div.product-info i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    color: var(--Verde);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+h3.titulares{
+    font-size: 24px;
+}
+p.precio{
+    font-size: 18px;
+    width:70%;
+}
+p.descuento{
+    font-size: 16px;
+    width:30%;
+}
+h4.descripcion{
+    font-size: 16px;
+    display: none;
+}
+
+
+
+/*__________________FOOTER______________________*/
+footer{
+    text-align: center;
+    margin-top:50px
+}
+footer article{
+    background-color: var(--Gris-claro);
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+footer p{
+    margin-bottom: 20px;
+
+}
+.icono-footer i{
+    background-color: var(--Gris-claro);
+    color: var(--Celeste);
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+p.copyright{
+    margin-top: 10px;
+    text-align: left;
+}
+
+/*____________Break Points_______________*/
+
+@media (min-width: 361px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+        width:45%;
+    }
+    nav ul li{
+        list-style-type: none;
+        margin:0 5%;
+    }
+    a{
+        text-decoration: none;
+        color:#000;
+    }
+    .burger-menu{
+        display: none;
+    }
+    h4.descripcion{
+        display: block;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+
+}
+
+
+@media (min-width: 769px){
+    main article{
+    width: 20%;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+
+}
+
