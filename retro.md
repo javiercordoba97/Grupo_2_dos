@@ -2,7 +2,7 @@
 
 ### Nicolas Ezcurra
 
-Agregar retrospectiva
+En retrospectiva del Sprint 1, utilizando la dinámica de la estrella de mar, creo que tendría que seguir haciendo, y a su vez, ya que una gran parte del sprint fue realizado de forma individual, también hacer más trabajo en equipo.
 
 ### Javier Cordoba
 
