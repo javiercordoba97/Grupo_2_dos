@@ -49,3 +49,10 @@ Estudié Biología en la UBA y a lo largo de la carrera me interesé por la bioi
 ### Lucas Marandino
 
 Actualmente tengo 22 años y trabajo como empleado de comercio, vivo en Muñiz. Al mismo tiempo, realizo un curso sobre Diseño UX y realice un curso sobre HTML y CSS anterior a este. Ahi descubri un poco sobre este mundo y el gusto que le tengo. Ademas soy bastante fan de la musica, los deportes y los videojuegos.
+
+
+
+#### Link tablero de trabajo:
+
+- https://trello.com/b/xYBfLWKz/sprint2
+
