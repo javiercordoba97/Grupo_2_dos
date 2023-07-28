@@ -24,13 +24,16 @@ header{
 .header1{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .logo{
-    width: 50%;
+    width: 25%;
     padding: 10px;
+    scale: 25%;
+    border: red 1px solid; 
 }
 .busq{
-    width: 48%;
+    width: 25%;
     margin-top: 50px;
     display: flex;
     align-items: center;
