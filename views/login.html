@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="/cart">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -45,19 +45,21 @@
     </header>
 
     <main class="login">
-        <form action="/" method="get">
-            <div class="r">
-                <label for="nu">Nombre de usuario</label>
-                <input type="text" name="usuario" id="nu" placeholder="Nombre de usuario">
-            </div>
-            <div class="r">
-                <label for="Contrasenia">Contraseña</label>
-                <input type="password" name="Contrasenia" id="Contrasenia">
-            </div>
-            <div class="r">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+
 
     </main>
 

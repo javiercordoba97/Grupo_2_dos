@@ -34,7 +34,7 @@
                 <ul>
                     <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="/cart">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -44,79 +44,37 @@
     </header>
 
     <main>
-        <form action="/" method="get" class="reg">
-
-            <div class="r">
-                <label for="na">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="na" placeholder="Nombre y Apellido">
-            </div>
-            <div class="r">
-                <label for="nu">Nombre de usuario</label>
-                <input type="text" name="usuario" id="nu" placeholder="Nombre de usuario">
-            </div>
-            <div class="r">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="nacimiento" id="fecha">
-            </div>
-            <div class="r">
-                <label for="Domicilio">Domicilio</label>
-                <input type="text" name="Domicilio" id="Domicilio" placeholder="Calle falsa 123">
-            </div>
-            <div class="p">
-                <label>Perfil</label>
-                <div class="perfil">
-                    <div class="p">
-                        <label>Comprador</label>
-                        <input class="op" type="radio" name="perfil" id="comp" value="Comprador">
-                    </div>
-                    <div class="p">
-                        <label>Vendedor</label>
-                        <input class="op" type="radio" name="perfil" id="ven" value="Vendedor">
-                    </div>
+        <div class="login-container">
+            <h1>Register</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
-            </div>
-            <div class="p">
-                <label>Categoria</label>
-                <div class="perfil">
-                    <div class="p">
-                        <label for="electro">Electro</label>
-                        <input class="op" type="checkbox" name="interes" id="electro" value="electro">
-                    </div>
-                    <div class="p">
-                        <label for="moda">Moda</label>
-                        <input class="op" type="checkbox" name="interes" id="moda" value="moda">
-                    </div>
-                    <div class="p">
-                        <label for="hogar">Hogar</label>
-                        <input class="op" type="checkbox" name="interes" id="hogar" value="hogar">
-                    </div>
-                    <div class="p">
-                        <label for="Jugueteria">Jugueteria</label>
-                        <input class="op" type="checkbox" name="interes" id="Jugueteria" value="Jugueteria">
-                    </div>
-                    <div class="p">
-                        <label for="Vida sana">Vida sana</label>
-                        <input class="op" type="checkbox" name="interes" id="Vida sana" value="Vida sana">
-                    </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
-            <div class="r">
-                <label for="foto">Foto de usuario</label>
-                <input type="file" name="foto" id="foto">
-            </div>
-            <div class="r">
-                <label for="Contrasenia">Contraseña</label>
-                <input type="password" name="Contrasenia" id="Contrasenia">
-            </div>
-            <div class="r">
-                <label for="confirmarContrasenia">Confirmar Contraseña</label>
-                <input type="password" name="confirmarContrasenia" id="confirmarContrasenia">
-            </div>
-            <div class="button">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </div>
-        </form>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="profile-group">
+                    <label>Profile:</label>
+                    <label>
+                      <input type="checkbox" name="profile" value="buyer"> Buyer
+                    </label>
+                    <label>
+                      <input type="checkbox" name="profile" value="seller"> Seller
+                    </label>
+                  </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
     </main>
 
     <footer>
