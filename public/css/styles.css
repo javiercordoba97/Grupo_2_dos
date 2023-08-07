@@ -14,6 +14,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--Gris-claro);
@@ -138,33 +139,48 @@ h4.descripcion{
 
 
 /*__________________FOOTER______________________*/
-footer{
-    text-align: center;
-    margin-top:50px;
+footer {
     background-color: var(--Celeste);
-}
-footer article{
-    background-color: var(--Gris-claro);
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
-footer p{
-    margin-bottom: 20px;
-
-}
-.icono-footer i{
-    background-color: var(--Gris-claro);
-    color: var(--Celeste);
-    font-size: 2em;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-p.copyright{
-    margin-top: 10px;
-    text-align: left;
-}
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-container{
+    padding-left:20px;
+  }
+  .logo-container img{
+    scale:140%;
+    width: 10%;
+    
+  }
+  .footer-content {
+    margin-top: 85px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .footer-links li {
+    margin: 0 10px;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-links li a:hover {
+    color: var(--Azul-francia);
+  }
 
 /*____________Break Points_______________*/
 
