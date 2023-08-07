@@ -1,0 +1,146 @@
+/*_______________________HEADER______________________ */
+header{
+    background-color:#00eeff;
+   }
+   .logo {
+       width: 15vh;
+       height: 15vh;
+   }
+   *{
+       margin: 0px;
+       box-sizing: border-box;
+   }
+   .header1{
+       display: flex;
+       justify-content: space-between;
+   }
+   .busq{
+       width: 25%;
+       margin-top: 35px;
+       display: flex;
+       align-items: center;
+       height: 20%;
+   }
+   .input{
+       width:90%;
+       padding: 5px;
+       border-radius: 5px;
+       background-color: #fff;
+       color: black;
+   }
+   .pago{
+       text-align: center;
+       flex-wrap: nowrap;
+       display: flex;
+       justify-content: space-around;
+       text-decoration-style: none;
+       text-decoration: none;
+       color:#000;
+   }
+   .burger-menu{
+       text-align: center;
+       margin-top: 30px;
+   }
+   .burger-menu i{
+       background-color: var(--Celeste);
+       color: black;
+       font-size: 20px;
+       padding: 10px ;
+       align-items: flex-end;
+       
+   }
+   a{
+       text-decoration: none;
+       color:#000;
+   }
+   .all-nav{
+       display: flex;
+       justify-content: space-around;
+       margin-left: 10vw;
+       margin-right: 10vw;
+       flex-wrap: nowrap;
+       text-decoration-style: none;
+       text-decoration: none;
+       color:#000;
+   }
+   .usuario{
+       list-style-type: none;
+       margin: 25px 10px 0 0;
+       flex-wrap: nowrap;
+       text-decoration: none;
+       color:#000;
+       font-size: 0.8em;
+       text-align: end;
+   }
+   /*_______________________main______________________________*/
+   
+   main{
+       background-color: #fff;
+   }
+   .descripcion li{
+       list-style-type: none;
+       margin-right: 5px;
+       font-size: 0.9em;
+   }
+   .juego{
+       display: flex;
+       justify-content: space-around;
+       margin: 0 5% 0 5%;
+       align-items: center;
+   }
+   .ImagenJuego{
+       width: 45% ;
+       height: 55%;
+   }
+   main p{
+       text-align: center;
+       margin: 0 5% 0 5%;
+   }
+   .datosJuego{
+       line-height: 150%;
+   }
+   .tituloJuego{
+       margin-bottom: 10%;
+       text-align: left;
+   }
+   
+   
+   /*__________________FOOTER______________________*/
+   footer{
+       text-align: center;
+       margin-top:50px;
+       background-color: #00eeff;
+   }
+   
+   footer article{
+       background-color: var(--Gris-claro);
+       margin-left: 10%;
+       margin-right: 10%;
+   
+   }
+   footer h4{
+       line-height: 25px;
+   }
+   
+   footer p{
+       margin-bottom: 20px;
+   
+   }
+   .icono-footer i{
+       background-color: var(--Gris-claro);
+       color: var(--Celeste);
+       font-size: 1.5em;
+       border-radius: 3px;
+       padding: 5px;
+   }
+   
+   p.copyright{
+       margin: 10% 0 0 2%;
+       text-align: left;
+       line-height: 50px;
+   }
+   
+   /*____________Break Points_______________*/
+   @media (min-width: 481px){
+   
+   }

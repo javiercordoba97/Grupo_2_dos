@@ -4,7 +4,7 @@ const app=express();
 
 app.use(express.static("public"));
 
-app.listen(3000,()=> console.log("srever on"));
+app.listen(3000,()=> console.log("server on"));
 
 
 app.get("/",(req,res)=>{
@@ -23,4 +23,7 @@ app.get("/login",(req,res)=>{
 app.get("/cart",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/cart.html"));
 
+});
+app.get("/product",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleProducto.html"));
 });
