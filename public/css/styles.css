@@ -85,7 +85,7 @@ header nav{
 main{
     width:100vw;
     margin: auto;
-    background-color: #7fb1d9;
+    background-color: var(--Blanco);
 }
 article{
     margin-bottom: 10px;
