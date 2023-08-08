@@ -31,10 +31,9 @@ header{
     justify-content: space-between;
 }
 .logo{
-    width: 25%;
-    padding: 10px;
-    scale: 25%;
-    border: red 1px solid; 
+    scale:140%;
+    width: 10%;
+    
 }
 .busq{
     width: 25%;
@@ -84,7 +83,7 @@ header nav{
 
 /*__________________MAIN______________________*/
 main{
-    width:90vw;
+    width:100vw;
     margin: auto;
     background-color: #7fb1d9;
 }
