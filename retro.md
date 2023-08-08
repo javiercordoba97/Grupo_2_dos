@@ -14,7 +14,7 @@ Agregar retrospectiva
 
 ### Guido Salustri
 
-Agregar retrospectiva
+Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
 
 ### Lucas Marandino
 
