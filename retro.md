@@ -10,7 +10,7 @@ Como retrospectiva creo que deberiamos mejorar un poco la comunicaion para que e
 
 ### Lucas Botto
 
-Agregar retrospectiva
+Sprint 1. En retrospección, Mi mea culpa de haberme perdido la reunión grupal por no estar atento al Discord. Creo que tendríamos que tener como grupo un día y horario fijo en la semana, como para intercambiar opiniones y repartirnos tareas. 
 
 ### Guido Salustri
 
