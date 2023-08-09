@@ -1,17 +1,96 @@
+/*_____________HEADER_________*/
+header{
+  background-color:#134d64b7;
+  color: #fff;
+ }
+ .logo {
+     width: 15vh;
+     height: 15vh;
+ }
+ *{
+     margin: 0px;
+     box-sizing: border-box;
+ }
+ .header1{
+     display: flex;
+     justify-content: space-between;
+ }
+ .busq{
+     width: 25%;
+     margin-top: 35px;
+     display: flex;
+     align-items: center;
+     height: 20%;
+ }
+ .input{
+     width:90%;
+     padding: 5px;
+     border-radius: 5px;
+     background-color: #fff;
+     color: black;
+ }
+ .pago{
+     text-align: center;
+     flex-wrap: nowrap;
+     display: flex;
+     justify-content: space-around;
+     text-decoration-style: none;
+     text-decoration: none;
+     color:#000;
+ }
+ .burger-menu{
+     text-align: center;
+     margin-top: 30px;
+     display: block;
+ }
+ .burger-menu i{
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+     padding: 10px ;
+     align-items: flex-end;
+     
+ }
+ a{
+     text-decoration: none;
+     color:#fff;
+ }
+ .all-nav{
+     display: flex;
+     justify-content: space-around;
+     margin-left: 10vw;
+     margin-right: 10vw;
+     flex-wrap: nowrap;
+     text-decoration-style: none;
+     text-decoration: none;
+     color:#000;
+ }
+ .usuario{
+     list-style-type: none;
+     margin: 25px 10px 0 0;
+     flex-wrap: nowrap;
+     text-decoration: none;
+     color:#000;
+     font-size: 0.8em;
+     text-align: end;
+     display: none;
+ }
+ /*____________MAIN__________*/
+ main{
+  width:100vw;
+  margin: auto;
+  background-color: #000000ec;
+}
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    background-color: #000;
   }
   
   .login-container {
     max-width: 400px;
-    margin: 100px auto;
+    margin: 10px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
@@ -81,3 +160,4 @@ body {
   .profile-group input[type="checkbox"]:checked {
     background-color: #007bff;
   }
+  

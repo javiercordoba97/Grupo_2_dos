@@ -23,7 +23,8 @@ body{
 
 /*__________________HEADER______________________*/
 header{
-    background-color:#00eeff;
+    background-color:#134d64b7;
+    color: #fff;
    }
    .logo {
        width: 15vh;
@@ -63,10 +64,10 @@ header{
    .burger-menu{
        text-align: center;
        margin-top: 30px;
+       display: block;
    }
    .burger-menu i{
-       background-color: var(--Celeste);
-       color: black;
+       color: rgb(255, 255, 255);
        font-size: 20px;
        padding: 10px ;
        align-items: flex-end;
@@ -74,7 +75,7 @@ header{
    }
    a{
        text-decoration: none;
-       color:#000;
+       color:#fff;
    }
    .all-nav{
        display: flex;
@@ -94,17 +95,18 @@ header{
        color:#000;
        font-size: 0.8em;
        text-align: end;
+       display: none;
    }
 
 /*__________________MAIN______________________*/
 main{
     width:100vw;
     margin: auto;
-    background-color: #000;
+    background-color: #000000ec;
 }
 article{
     margin-bottom: 10px;
-    background-color: #8a92988e;
+    background-color: #ffffffea;
 }
 article img{
     width:100%;
@@ -137,6 +139,10 @@ div.product-info i{
 }
 h3.titulares{
     font-size: 24px;
+    display: flex;
+    color:#fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
 }
 p.precio{
     font-size: 18px;
@@ -155,7 +161,7 @@ h4.descripcion{
 
 /*__________________FOOTER______________________*/
 footer {
-    background-color: var(--Celeste);
+    background-color:#134d64b7;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -199,26 +205,15 @@ footer {
 
 /*____________Break Points_______________*/
 
-@media (min-width: 361px){
-    header nav{
-        display: flex;
-        justify-content: space-between;
-    }
+@media (min-width: 480px){
     header nav ul{
         display: flex;
         width:45%;
     }
-    nav ul li{
-        list-style-type: none;
-        margin:0 5%;
-    }
     a{
         text-decoration: none;
-        color:#000;
     }
-    .burger-menu{
-        display: none;
-    }
+
     h4.descripcion{
         display: block;
     }
@@ -229,7 +224,12 @@ footer {
     .productos{
         justify-content: space-around;
     }
-
+    .usuario{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+}
 }
 
 
@@ -239,6 +239,9 @@ footer {
     }
     .productos{
         justify-content: space-around;
+    }
+    .usuario{
+        display: block;
     }
 
 }

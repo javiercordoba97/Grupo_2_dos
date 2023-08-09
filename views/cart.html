@@ -12,47 +12,89 @@
     </head>
 <body>
   <header>
-    <h1>Carrito de Compras</h1>
-    <a href="/">volver al home</a>
-  </header>
+    <div class="header1">
+        <div class="marco-logo"><img class="logo" src="img/Logo.png" alt="" href="/views/home.html"></div>
+        <div class="busq">
+            
+            <input class="input" type="text" name="Busqueda" placeholder="Busqueda">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="usuario">
+            <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="/cart">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </div>
+    <nav>    
+        <div class="all-nav">
+            <div><a href="#">Oferta</a></div>
+            <div><a href="#">Tiendas Oficiales</a></div>
+            <div><a href="#">Vender</a></div>
+            <div><a href="#">Ayuda</a></div>
+        </div>
+    </nav>
+        <marquee behavior="scroll" direction="left" scrolldelay="800" scrollamount="100">
+            <div class="pago">
+                <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito </p>   
+            </div>
+        </marquee>    
+    </header>
   <main class="cart">
     <section id="cart-items">
       <!-- Cart items se van a agregar cn JavaScript -->
       <div class="cart-item">
-        <img src="/img/RedDead2.png" alt="Item 1">
+        <img src="/img/img-odisea.png" alt="Item 1">
         <div class="item-details">
           <h3>Item 1</h3>
           <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span class="item-price">$19.99</span>
+          <span class="item-price">$9.840</span>
         </div>
         <button class="remove-button">Remove</button>
       </div>
       <div class="cart-item">
-        <img src="/img/RedDead2.png" alt="Item 1">
+        <img src="/img/horizon.jpg" alt="Item 1">
         <div class="item-details">
           <h3>Item 1</h3>
           <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span class="item-price">$19.99</span>
+          <span class="item-price">$6.300</span>
         </div>
         <button class="remove-button">Remove</button>
       </div>
       <div class="cart-item">
-        <img src="/img/RedDead2.png" alt="Item 1">
+        <img src="/img/witcher.jpg" alt="Item 1">
         <div class="item-details">
           <h3>Item 1</h3>
           <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span class="item-price">$19.99</span>
+          <span class="item-price">$11.900</span>
         </div>
         <button class="remove-button">Remove</button>
       </div>
     </section>
     <div id="cart-total">
       <h2>Total:</h2>
-      <span id="total-amount">$0.00</span>
+      <span id="total-amount">$28.040</span>
     </div>
   </main>
   <script src="cart.js"></script>
 </body>
+<footer>
+  <div class="logo-container">
+    <img src="img/LogoAzul.png" alt="Logo">
+    <p>&copy; 2023 ReadMe</p>
+  </div>
+
+  <div class="footer-content">
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2023 ReadMe. Todos los derechos reservados.</p>
+  </div>
+</footer>
 </html>
 
 
