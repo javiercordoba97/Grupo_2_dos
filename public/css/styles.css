@@ -73,7 +73,7 @@ header{
        align-items: flex-end;
        
    }
-   a{
+   header a{
        text-decoration: none;
        color:#fff;
    }
@@ -116,12 +116,12 @@ article img{
     flex-wrap: wrap;
 }
 .product-info{
-    border-top: 1px solid var(--Gris-claro);
     width: 100%;
     padding:15px;
     display: flex;
     flex-wrap:wrap;
     position: relative;
+    color:#000;
 }
 div.product-info i{
     display: block;
@@ -156,6 +156,10 @@ h4.descripcion{
     font-size: 16px;
     display: none;
 }
+article img{
+    border-bottom: 1px solid gray;
+}
+
 
 
 

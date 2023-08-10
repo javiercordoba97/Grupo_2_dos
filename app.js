@@ -11,10 +11,6 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/home.html"));
 
 });
-app.get("/Logo",(req,res)=>{
-    res.sendFile(path.join(__dirname,"/views/home.html"));
-
-});
 app.get("/register",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/register.html"));
 
@@ -28,6 +24,19 @@ app.get("/cart",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/cart.html"));
 
 });
-app.get("/product",(req,res)=>{
-    res.sendFile(path.join(__dirname,"/views/detalleProducto.html"));
+
+app.get("/productRedDead2",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleRedDead2.html"));
+
+});
+app.get("/productDonQuijote",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleDonQuijote.html"));
+});
+app.get("/productHorizon",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleHorizon.html"));
+
+});
+app.get("/inicio",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/home.html"));
+
 });
