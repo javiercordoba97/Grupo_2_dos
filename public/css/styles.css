@@ -53,14 +53,12 @@ header{
        color: black;
    }
    .pago{
-       text-align: center;
-       flex-wrap: nowrap;
-       display: flex;
-       justify-content: space-around;
-       text-decoration-style: none;
-       text-decoration: none;
-       color:#000;
-   }
+    margin-top: 7px;
+    margin-bottom: 3px;
+    text-decoration-style: none;
+    text-decoration: none;
+    color:#fff;
+ }
    .burger-menu{
        text-align: center;
        margin-top: 30px;
@@ -174,9 +172,8 @@ footer {
     padding-left:20px;
   }
   .logo-container img{
-    scale:140%;
-    width: 10%;
-    
+    height: 12vh;
+    width: 12vh; 
   }
   .footer-content {
     margin-top: 85px;

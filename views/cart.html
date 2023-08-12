@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="header1">
-        <div class="marco-logo"><img class="logo" src="img/Logo.png" alt="" href="/views/home.html"></div>
+      <a href="/inicio"><img class="logo" src="img/Logo.png" alt=""></a>
         <div class="busq">
             
             <input class="input" type="text" name="Busqueda" placeholder="Busqueda">
@@ -48,8 +48,8 @@
       <div class="cart-item">
         <img src="/img/img-odisea.png" alt="Item 1">
         <div class="item-details">
-          <h3>Item 1</h3>
-          <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>La Odisea</h3>
+          <p>¡Comprando con el 20% OFF estas ahorrando $2.460!</p>
           <span class="item-price">$9.840</span>
         </div>
         <button class="remove-button">Remove</button>
@@ -57,8 +57,8 @@
       <div class="cart-item">
         <img src="/img/horizon.jpg" alt="Item 1">
         <div class="item-details">
-          <h3>Item 1</h3>
-          <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Horizon: Zero Dawn</h3>
+          <p>¡Comprando con el 30% OFF estas ahorrando $2.700!</p>
           <span class="item-price">$6.300</span>
         </div>
         <button class="remove-button">Remove</button>
@@ -66,17 +66,21 @@
       <div class="cart-item">
         <img src="/img/witcher.jpg" alt="Item 1">
         <div class="item-details">
-          <h3>Item 1</h3>
-          <p>Descripcion del Item 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>The Witcher 3: Wild Hunt</h3>
+          <p>¡Comprando con el 30% OFF estas ahorrando $5.100!</p>
           <span class="item-price">$11.900</span>
         </div>
         <button class="remove-button">Remove</button>
       </div>
     </section>
-    <div id="cart-total">
-      <h2>Total:</h2>
-      <span id="total-amount">$28.040</span>
+    <div class="total">
+      <div id="cart-total">
+        <h2>Total:</h2>
+        <span id="total-amount">$28.040</span>
+        <button class="comprar">Comprar</button>
+      </div>
     </div>
+    
   </main>
   <script src="cart.js"></script>
 </body>

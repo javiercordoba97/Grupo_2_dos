@@ -1,3 +1,6 @@
+body{
+    font-family: "roboto", sans-serif;
+}
 /*_______________________HEADER______________________ */
 header{
     background-color:#134d64b7;
@@ -27,14 +30,12 @@ header{
        color: black;
    }
    .pago{
-       text-align: center;
-       flex-wrap: nowrap;
-       display: flex;
-       justify-content: space-around;
-       text-decoration-style: none;
-       text-decoration: none;
-       color:#000;
-   }
+    margin-top: 7px;
+    margin-bottom: 3px;
+    text-decoration-style: none;
+    text-decoration: none;
+    color:#fff;
+ }
    .burger-menu{
        text-align: center;
        margin-top: 30px;
@@ -59,7 +60,6 @@ header{
        flex-wrap: nowrap;
        text-decoration-style: none;
        text-decoration: none;
-       color:#000;
    }
    .usuario{
        list-style-type: none;
@@ -76,23 +76,24 @@ header{
    main{
        background-color: #000000ec;
        color: #fff;
+       border-bottom: 5px solid #00000000;
+       box-sizing: border-box;
+
    }
    .descripcion li{
        list-style-type: none;
        margin-right: 5px;
-       font-size: 0.9em;
+       font-size: 4vw;
    }
    .juego{
        display: flex;
        justify-content: space-around;
-       margin: 0 5% 0 5%;
        align-items: center;
    }
    .ImagenJuego{
+       height: 50vw;
        width: 45vw ;
-       height: 55vw;
-       margin-top: 5px;
-       margin-bottom: 5px;
+       margin: 4vw;
    }
    main p{
        text-align: center;
@@ -105,7 +106,17 @@ header{
        margin-bottom: 10%;
        text-align: left;
    }
-   
+   .ImagenJuego{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
+   }
+   .botonDeCompra{
+    font-family: fantasy;
+    color: #fff;
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
    
    /*__________________FOOTER______________________*/
    footer {
@@ -118,9 +129,8 @@ header{
     padding-left:20px;
   }
   .logo-container img{
-    scale:140%;
-    width: 10%;
-    
+    height: 12vh;
+    width: 12vh; 
   }
   .footer-content {
     margin-top: 85px;
@@ -151,7 +161,34 @@ header{
     color: var(--Azul-francia);
   }
 
-   
+/*____________Break Points_______________*/
+
+@media (min-width: 480px){
+    header nav ul{
+        display: flex;
+        width:45%;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    h4.descripcion{
+        display: block;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+    .usuario{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+}
+}
    /*____________Break Points_______________*/
    @media (min-width: 481px){
    .usuario{
@@ -160,4 +197,29 @@ header{
    .burger-menu{
     display: none;
    }
+   .descripcion{
+    font-size: x-large;
+    margin: 15px;
+   }
+   }
+   @media(min-width: 769px){
+    .datosJuego{
+        line-height: 200%;
+    }
+    .descripcion li{
+        font-size: 3vw;
+    }
+    .ImagenJuego{
+        height: 40vw;
+        width: 35vw ;
+        margin: 4vw;
+    }
+   }
+   @media (min-width: 1280px){
+    .datosJuego{
+        line-height: 250%;
+    }
+    .descripcion {
+        font-size: 2vw;
+    }
    }

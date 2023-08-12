@@ -29,12 +29,27 @@ app.get("/productRedDead2",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/detalleRedDead2.html"));
 
 });
+app.get("/productHorizon",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleHorizon.html"));
+});
+app.get("/prouctAssassins",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleAssasins.html"));
+
+});
+app.get("/productWitcher",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleWitcher.html"));
+});
 app.get("/productDonQuijote",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/detalleDonQuijote.html"));
 });
-app.get("/productHorizon",(req,res)=>{
-    res.sendFile(path.join(__dirname,"/views/detalleHorizon.html"));
-
+app.get("/productOdisea",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleOdisea.html"));
+});
+app.get("/productCrimen",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalleCrimen.html"));
+});
+app.get("/product1984",(req,res)=>{
+    res.sendFile(path.join(__dirname,"/views/detalle1984.html"));
 });
 app.get("/inicio",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/home.html"));
