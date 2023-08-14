@@ -6,7 +6,7 @@ header{
  }
  .logo {
      width: 15vh;
-     height: 15vh;
+     height: 12vh; 
  }
  .header1{
      display: flex;

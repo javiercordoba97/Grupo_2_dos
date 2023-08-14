@@ -28,7 +28,7 @@ header{
    }
    .logo {
        width: 15vh;
-       height: 15vh;
+       height: 12vh;
    }
    *{
        margin: 0px;
@@ -172,7 +172,7 @@ footer {
     padding-left:20px;
   }
   .logo-container img{
-    height: 12vh;
+    height: 10vh;
     width: 12vh; 
   }
   .footer-content {
