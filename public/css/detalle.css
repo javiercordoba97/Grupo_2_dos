@@ -9,6 +9,7 @@ header{
    .logo {
        width: 9vw;
        height: 7vw;
+       margin-left: 10px;
    }
    *{
        margin: 0px;
