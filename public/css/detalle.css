@@ -7,8 +7,8 @@ header{
     color: #fff;
    }
    .logo {
-       width: 15vh;
-       height: 12vh;
+       width: 9vw;
+       height: 7vw;
    }
    *{
        margin: 0px;
@@ -129,8 +129,8 @@ header{
     padding-left:20px;
   }
   .logo-container img{
-    height: 10vh;
-    width: 12vh; 
+    height: 6vw;
+    width: 7vw; 
   }
   .footer-content {
     margin-top: 85px;

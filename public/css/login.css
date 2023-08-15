@@ -4,9 +4,9 @@ header{
   background-color:#134d64b7;
   color: #fff;
  }
- .logo {
-     width: 15vh;
-     height: 12vh; 
+ .logo img{
+     width: 9vw;
+     height: 7vw;
  }
  .header1{
      display: flex;
