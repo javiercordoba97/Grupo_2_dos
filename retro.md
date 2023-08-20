@@ -16,7 +16,9 @@ Sprint 2. Retro. No podemos coordinar como equipo un dia y horario para armar un
 
 ### Guido Salustri
 
-Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
+Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
+
+Sprint 2. Seguimos arrastrando la falta de comunicacion del sprint anterior. Hay muy poco interaccion en discord y se termina acumulando todo para el final. Sin embargo, llegamos a las entregas, pero todo podria ser mucho mas coordinado y eficiente.
 
 ### Lucas Marandino
 
