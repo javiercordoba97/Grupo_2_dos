@@ -74,7 +74,7 @@ header{
    }
    /*_______________________main______________________________*/
    
-   main{
+   main.detalle{
        background-color: #000000ec;
        color: #fff;
        border-bottom: 5px solid #00000000;
@@ -96,7 +96,7 @@ header{
        width: 45vw ;
        margin: 4vw;
    }
-   main p{
+   main p.detalle{
        text-align: center;
        margin: 0 5% 0 5%;
    }

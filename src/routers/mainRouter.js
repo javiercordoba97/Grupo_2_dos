@@ -9,7 +9,7 @@ router.get('/cart', mainController.cart );
 
 router.get('/productRedDead2', mainController.productRedDead2 );
 router.get('/productHorizon', mainController.productHorizon );
-router.get('/prouctAssassins', mainController.prouctAssassins );
+router.get('/productAssassins', mainController.productAssassins );
 router.get('/productWitcher', mainController.productWitcher );
 
 router.get('/productDonQuijote', mainController.productDonQuijote );

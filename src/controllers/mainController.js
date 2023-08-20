@@ -17,7 +17,7 @@ const controller = {
     productHorizon: (req, res)=>{
         res.render('detalleHorizon')
     },
-    prouctAssassins: (req, res)=>{
+    productAssassins: (req, res)=>{
         res.render('detalleAssassins')
     },
     productWitcher: (req, res)=>{
