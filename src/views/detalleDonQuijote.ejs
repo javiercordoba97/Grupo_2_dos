@@ -1,47 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Heaven</title>
-    <link rel="stylesheet" href="/css/detalle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-</head>
+    <%- include("partials/head") %> 
 <body>
-    <header>
-        <div class="header1">
-            <a href="/inicio"><img class="logo" src="img/Logo.png" alt=""></a>
-            <div class="busq">
-                
-                <input class="input" type="text" name="Busqueda" placeholder="Busqueda">
-                <i class="fa fa-search"></i>
-            </div>
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="usuario">
-                <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="/cart">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </div>
-        <nav>    
-            <div class="all-nav">
-                <div><a href="#">Oferta</a></div>
-                <div><a href="#">Tiendas Oficiales</a></div>
-                <div><a href="#">Vender</a></div>
-                <div><a href="#">Ayuda</a></div>
-            </div>
-        </nav>
-            <marquee behavior="scroll" direction="left" scrolldelay="800" scrollamount="100">
-                <div class="pago">
-                    <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito </p>   
-                </div>
-            </marquee>    
-        </header>
+ 
+    <%- include("partials/header") %> 
 
     <main>
         <div class="juego">
@@ -67,21 +29,7 @@
         </p>
     </main>
     
-    <footer>
-        <div class="logo-container">
-          <img src="img/Logo.png" alt="Logo">
-          <p>&copy; 2023 Media Heaven</p>
-        </div>
-
-        <div class="footer-content">
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <p>&copy; 2023 Media Heaven. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+    <%- include("partials/footer") %> 
 
 </body>
 </html>
