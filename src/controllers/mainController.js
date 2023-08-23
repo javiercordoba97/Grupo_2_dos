@@ -11,6 +11,12 @@ const controller = {
     cart: (req, res)=>{
         res.render('cart')
     },
+    edicion: (req, res)=>{
+        res.render('edicion')
+    },
+    creacion: (req, res)=>{
+        res.render('creacion')
+    },
     productRedDead2: (req, res)=>{
         res.render('detalleRedDead2')
     },
