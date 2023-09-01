@@ -1,6 +1,15 @@
+let fs = require('fs')
+let path = require('path')
+
+let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8')) 
+
 const controller = {
     home: (req, res)=>{
-        res.render('home')
+        res.render('home',{productos: listaProductos})
+    },
+    detalle:(req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        res.render('detalle1984', {producto: productoEncontrado})
     },
     register: (req, res)=>{
         res.render('register')
@@ -17,6 +26,7 @@ const controller = {
     creacion: (req, res)=>{
         res.render('creacion')
     },
+    /*
     productRedDead2: (req, res)=>{
         res.render('detalleRedDead2')
     },
@@ -40,7 +50,7 @@ const controller = {
     },
     product1984: (req, res)=>{
         res.render('detalle1984')
-    },
+    },*/
     
 }
 

@@ -10,46 +10,18 @@
         <section>
             <h3 class="titulares">Juegos</h3>
             <div class="productos">
+                <% productos.forEach((p)=>{%>
                 <article>
                     <a href="/productRedDead2">
-                        <img src="/img/RedDead2.jpg" alt="">
+                        <img src="/img/<%= p.img %>" alt="">
                         <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio">$12.000</p>
-                            <p class="descuento">30% OFF</p>
-                            <h4 class="descripcion">Red Dead Redemption 2</h4>
+                            <p class="precio"><%= p.precio %></p>
+                            <p class="descuento"><%= p.descuento %> OFF</p>
+                            <h4 class="descripcion"><%= p.descripcion %></h4>
                         </div>
                     </a>
                 </article>
-                <article>
-                    <a href="/productHorizon">
-                        <img src="/img/horizon.jpg" alt="">
-                        <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio">$9.000</p>
-                            <p class="descuento">30% OFF</p>
-                            <h4 class="descripcion">horizon: Zero Dawn</h4>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="/productAssassins">
-                    <img src="/img/assassins.jpg" alt="">
-                    <div class="product-info"><i class="fas fa-truck"></i>
-                        <p class="precio">$7.000</p>
-                        <p class="descuento">30% OFF</p>
-                        <h4 class="descripcion">Assassins Creed Revelations</h4>
-                    </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="/productWitcher">
-                    <img src="/img/witcher.jpg" alt=""></a>
-                    <div class="product-info"><i class="fas fa-truck"></i>
-                        <p class="precio">$17.000</p>
-                        <p class="descuento">30% OFF</p>
-                        <h4 class="descripcion">The Witcher 3: Wild Hunt</h4>
-                    </div>
-                    </a>
-                </article>
+                <%})%>
             </div>
         </section>
 
