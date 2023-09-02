@@ -4,31 +4,32 @@
             "titulo": "Red Dead Redemption 2",
             "descripcion": "Red Dead Redemption 2",
             "precio": "$12.000",
-            "descuento": "30% OFF",
+            "descuento": "30%",
             "img": "RedDead2.jpg"
       },
+      
       {
             "id": 2,
-            "titulo": "Red Dead Redemption 2",
-            "descripcion": "Red Dead Redemption 2",
-            "precio": "$12.000",
-            "descuento": "30% OFF",
-            "img": "RedDead2.jpg"
+            "titulo": "Horizon Zero Dawn",
+            "descripcion": "Horizon Zero Dawn",
+            "precio": "$9.000",
+            "descuento": "30%",
+            "img": "horizon.jpg"
       },
       {
             "id": 3,
-            "titulo": "Red Dead Redemption 2",
-            "descripcion": "Red Dead Redemption 2",
-            "precio": "$12.000",
-            "descuento": "30% OFF",
+            "titulo": "Assassins Creed Revelations",
+            "descripcion": "Assassins Creed Revelations",
+            "precio": "$7.000",
+            "descuento": "30%",
             "img": "assassins.jpg"
       },
       {
             "id": 4,
-            "titulo": "Red Dead Redemption 2",
-            "descripcion": "Red Dead Redemption 2",
-            "precio": "$12.000",
-            "descuento": "30% OFF",
-            "img": "RedDead2.jpg"
+            "titulo": "The Witcher",
+            "descripcion": "The Witcher 3: Wild Hunt",
+            "precio": "$15.000",
+            "descuento": "30%",
+            "img": "witcher.jpg"
       }
 ]

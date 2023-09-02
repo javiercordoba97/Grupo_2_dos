@@ -13,15 +13,21 @@
         <label for="name">Nombre del producto:</label>
         <input type="text" id="name" name="name" required>
         
+        <!-- Que la barra solo se modifique según el contenido -->
+
         <label for="description">Descripción:</label>
         <textarea id="description" name="description" required></textarea>
         
         <label for="image">Imagen:</label>
         <input type="file" id="image" name="image" accept="image/*">
         
-        <label for="category">Categoría:</label>
-        <input type="text" id="category" name="category" required>
+        <!-- Ingresar opciones en menú desplegable -->
+        <label for="category">Categoría:
+        <input type="radio" id="category" name="category" required> Juego 
+        <input type="radio" id="category" name="category" required> Libro 
+        </label>
         
+        <!-- Según la opción elegida en el menú, que salgan los campos correspondientes a completar -->
         <label for="colors">Colores:</label>
         <input type="text" id="colors" name="colors" required>
         
