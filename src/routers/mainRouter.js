@@ -10,6 +10,7 @@ router.get('/cart', mainController.cart );
 router.get('/edicion', mainController.edicion );
 router.get('/creacion', mainController.creacion );
 
+router.post('/creacion',mainController.crearProcess)
 /*router.get('/productRedDead2', mainController.productRedDead2 );
 router.get('/productHorizon', mainController.productHorizon );
 router.get('/productAssassins', mainController.productAssassins );

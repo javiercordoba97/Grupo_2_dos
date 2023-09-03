@@ -26,6 +26,19 @@ const controller = {
     creacion: (req, res)=>{
         res.render('creacion')
     },
+    crearProcess:(req,res)=>{
+        let productoNuevo = {
+            "id":listaProductos.length+1,
+            "titulo": req.body.titulo,
+            "description": req.body.description,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "img": "RedDead2.jpg"
+    }
+        listaProductos.push(productoNuevo)
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
+    },
     /*
     productRedDead2: (req, res)=>{
         res.render('detalleRedDead2')

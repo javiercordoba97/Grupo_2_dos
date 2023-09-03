@@ -12,12 +12,12 @@
             <div class="productos">
                 <% productos.forEach((p)=>{%>
                 <article>
-                    <a href="/productRedDead2">
+                    <a href="/detalle1984/<%= p.id %>">
                         <img src="/img/<%= p.img %>" alt="">
                         <div class="product-info"><i class="fas fa-truck"></i>
                             <p class="precio"><%= p.precio %></p>
                             <p class="descuento"><%= p.descuento %> OFF</p>
-                            <h4 class="descripcion"><%= p.descripcion %></h4>
+                            <h4 class="description"><%= p.descripcion %></h4>
                         </div>
                     </a>
                 </article>
