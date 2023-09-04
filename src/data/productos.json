@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "titulo": "Red Dead Redemption 2",
-    "description": "Red Dead Redemption 2",
-    "precio": "$12.000",
+    "titulo": "blue",
+    "description": "Red",
+    "precio": "1800",
     "descuento": "30%",
     "img": "RedDead2.jpg"
   },
