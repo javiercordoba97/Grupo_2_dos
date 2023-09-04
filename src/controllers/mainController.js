@@ -20,9 +20,6 @@ const controller = {
     cart: (req, res)=>{
         res.render('cart')
     },
-    edicion: (req, res)=>{
-        res.render('edicion')
-    },
     creacion: (req, res)=>{
         res.render('creacion')
     },
@@ -39,6 +36,26 @@ const controller = {
         fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
         res.redirect('/')
     },
+    edicion: (req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        res.render('edicion', {producto: productoEncontrado})
+    },
+    editarProcess:(req,res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        let indice= listaProductos.indexOf(productoEncontrado)
+        productoEncontrado = {
+            "id":productoEncontrado.id,
+            "titulo": req.body.titulo,
+            "description": req.body.description,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "img": "RedDead2.jpg"
+        }
+        listaProductos[indice]= productoEncontrado
+        console.log(listaProductos)
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
+    }
     /*
     productRedDead2: (req, res)=>{
         res.render('detalleRedDead2')

@@ -7,10 +7,14 @@
 
   <%- include("partials/header") %> 
     <main>
-
-
-
-        
+      <form action="/edicion/<%=producto.id%>?_method=put" method="post" >
+        <input value=<%=producto.titulo%> type="text" name="titulo" >
+        <input value=<%=producto.description%> type="text" name="description" >
+        <input value=<%=producto.precio%> type="number" name="precio" >
+        <input value=<%=producto.descuento%> type="text" name="descueto" >
+        <button type="submit">Crear</button>
+      </form>
+  
     </main>
   <%- include("partials/footer") %> 
 </body>
