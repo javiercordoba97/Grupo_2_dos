@@ -162,6 +162,10 @@ article img{
     border-bottom: 1px solid gray;
 }
 
+.crear_category{
+    --clip: polygon (0 0, 100% , 0 0)
+}
+
 
 
 

@@ -2,33 +2,49 @@
   {
     "id": 1,
     "titulo": "Red Dead Redemption 2",
-    "description": "Red Dead Redemption 2",
     "precio": "$12.000",
     "descuento": "30%",
-    "img": "RedDead2.jpg"
+    "img": "RedDead2.jpg",
+    "plataforma": "PS4",
+    "formato": "físico",
+    "multijugador": "Si",
+    "online": "No",
+    "description": "Red Dead Redemption 2 es un videojuego de acción-aventura western basado en el drama. Un juego bastante conocido también por sus cantidades de detalles realistas en un mundo abierto y en perspectiva de primera y tercera persona, ​ con componentes para un jugador y multijugador.​ Fue desarrollado por Rockstar Games"
   },
   {
     "id": 2,
     "titulo": "Horizon Zero Dawn",
-    "description": "Horizon Zero Dawn",
     "precio": "$9.000",
     "descuento": "30%",
-    "img": "horizon.jpg"
+    "img": "horizon.jpg",
+    "plataforma": "PS4",
+    "formato": "físico",
+    "multijugador": "No",
+    "online": "No",
+    "description": "Horizon: Zero Dawn es un juego de aventuras en mundo abierto, con dosis acción y exploración en tercera persona a cargo de Guerrilla Games, responsables de Killzone. Ambientado en un futuro apocalíptico distante, los seres humanos han experimentado una regresión tecnológica que los ha devuelto a la edad de piedra y dividido en tribus. Encarnando a Aloy, una hábil cazadora, deberemos descubrir secretos del pasado, así como sobrevivir en un nuevo mundo plagado de criaturas robóticas inteligentes, hostiles y muy peligrosas."
   },
   {
     "id": 3,
     "titulo": "Assassins Creed Revelations",
-    "description": "Assassins Creed Revelations",
     "precio": "$7.000",
     "descuento": "30%",
-    "img": "assassins.jpg"
+    "img": "assassins.jpg",
+    "plataforma": "PS4",
+    "formato": "físico",
+    "multijugador": "No",
+    "online": "No",
+    "description": "Assassin's Creed: Revelations es un videojuego desarrollado por Ubisoft Montreal y distribuido por Ubisoft. Es el cuarto juego de la serie, siendo así la secuela directa del videojuego de 2010, Assassin's Creed: Brotherhood."
   },
   {
     "id": 4,
     "titulo": "The Witcher",
-    "description": "The Witcher 3: Wild Hunt",
     "precio": "$15.000",
     "descuento": "30%",
-    "img": "witcher.jpg"
+    "img": "witcher.jpg",
+    "plataforma": "PS5",
+    "formato": "físico",
+    "multijugador": "No",
+    "online": "No",
+    "description": "Eres Geralt de Rivia. A tu alrededor, los pueblos y asentamientos de los Reinos del Norte están desapareciendo a manos de un ejército invasor sobrenatural al que se conoce como Cacería salvaje, pues deja un rastro de destrucción y sangre tras su paso.    Mientras te preparas para un enfrentamiento encarnizado contra la Cacería salvaje, irás descubriendo una historia compleja y apasionante y conociendo a personajes inolvidables. Al explorar los Reinos del Norte, descubrirás que en cada pueblo y detrás de cada árbol y cada sombra hay misterios."
   }
 ]

@@ -9,7 +9,7 @@ const controller = {
     },
     detalle:(req, res)=>{
         let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
-        res.render('detalle1984', {producto: productoEncontrado})
+        res.render('product', {producto: productoEncontrado})
     },
     register: (req, res)=>{
         res.render('register')
