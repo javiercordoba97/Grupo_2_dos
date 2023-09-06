@@ -8,14 +8,14 @@
     <%- include("partials/header") %> 
     <main>
         <section>
-            <h3 class="titulares">Juegos</h3>
+            <h3 class="titulares">Nuestros Productos</h3>
             <div class="productos">
                 <% productos.forEach((p)=>{%>
-                <article>
+                <article class="product">
                     <a href="/product/<%= p.id %>">
                         <img src="/img/<%= p.img %>" alt="">
                         <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio"><%= p.precio %></p>
+                            <p class="precio"> $ <%= p.precio %></p>
                             <p class="descuento"><%= p.descuento %> OFF</p>
                             <h4 class="description"><%= p.descripcion %></h4>
                         </div>
@@ -25,6 +25,7 @@
             </div>
         </section>
 
+       <!--  
         <section>
             <h3 class="titulares">Libros</h3>
             <div class="productos">
@@ -69,7 +70,7 @@
                     </a>
                 </article>
             </div>
-        </section>
+        </section> -->
     </main>
     <%- include("partials/footer") %> 
 

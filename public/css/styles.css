@@ -116,6 +116,11 @@ article img{
 .productos{
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin-left: 20px;
+}
+.product{
+    margin: 20px;
 }
 .product-info{
     width: 100%;
@@ -145,6 +150,7 @@ h3.titulares{
     color:#fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 p.precio{
     font-size: 18px;

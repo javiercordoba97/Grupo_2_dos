@@ -27,10 +27,14 @@ const controller = {
         let productoNuevo = {
             "id":listaProductos.length+1,
             "titulo": req.body.titulo,
-            "description": req.body.description,
             "precio": req.body.precio,
             "descuento": req.body.descuento,
-            "img": "RedDead2.jpg"
+            "img": req.file ? req.file.filename : "default.png",
+            "plataforma": req.body.plataforma,
+            "formato": req.body.formato,
+            "multijugador": req.body.multijugador,
+            "online": req.body.online,
+            "description": req.body.description
     }
         listaProductos.push(productoNuevo)
         fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
