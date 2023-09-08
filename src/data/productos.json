@@ -1,15 +1,7 @@
 [
   {
     "id": 1,
-    "titulo": "Red Dead Redemption 2",
-    "precio": "12.000",
-    "descuento": "30%",
-    "img": "RedDead2.jpg",
-    "plataforma": "PS4",
-    "formato": "físico",
-    "multijugador": "Si",
-    "online": "No",
-    "description": "Red Dead Redemption 2 es un videojuego de acción-aventura western basado en el drama. Un juego bastante conocido también por sus cantidades de detalles realistas en un mundo abierto y en perspectiva de primera y tercera persona, ​ con componentes para un jugador y multijugador.​ Fue desarrollado por Rockstar Games"
+    "img": "RedDead2.jpg"
   },
   {
     "id": 2,
@@ -21,7 +13,8 @@
     "formato": "físico",
     "multijugador": "No",
     "online": "No",
-    "description": "Horizon: Zero Dawn es un juego de aventuras en mundo abierto, con dosis acción y exploración en tercera persona a cargo de Guerrilla Games, responsables de Killzone. Ambientado en un futuro apocalíptico distante, los seres humanos han experimentado una regresión tecnológica que los ha devuelto a la edad de piedra y dividido en tribus. Encarnando a Aloy, una hábil cazadora, deberemos descubrir secretos del pasado, así como sobrevivir en un nuevo mundo plagado de criaturas robóticas inteligentes, hostiles y muy peligrosas."
+    "description": "Horizon: Zero Dawn es un juego de aventuras en mundo abierto, con dosis acción y exploración en tercera persona a cargo de Guerrilla Games, responsables de Killzone. Ambientado en un futuro apocalíptico distante, los seres humanos han experimentado una regresión tecnológica que los ha devuelto a la edad de piedra y dividido en tribus. Encarnando a Aloy, una hábil cazadora, deberemos descubrir secretos del pasado, así como sobrevivir en un nuevo mundo plagado de criaturas robóticas inteligentes, hostiles y muy peligrosas.",
+    "borrado": false
   },
   {
     "id": 3,
@@ -33,7 +26,8 @@
     "formato": "físico",
     "multijugador": "No",
     "online": "No",
-    "description": "Assassin's Creed: Revelations es un videojuego desarrollado por Ubisoft Montreal y distribuido por Ubisoft. Es el cuarto juego de la serie, siendo así la secuela directa del videojuego de 2010, Assassin's Creed: Brotherhood."
+    "description": "Assassin's Creed: Revelations es un videojuego desarrollado por Ubisoft Montreal y distribuido por Ubisoft. Es el cuarto juego de la serie, siendo así la secuela directa del videojuego de 2010, Assassin's Creed: Brotherhood.",
+    "borrado": false
   },
   {
     "id": 4,
@@ -45,7 +39,8 @@
     "formato": "físico",
     "multijugador": "No",
     "online": "No",
-    "description": "Eres Geralt de Rivia. A tu alrededor, los pueblos y asentamientos de los Reinos del Norte están desapareciendo a manos de un ejército invasor sobrenatural al que se conoce como Cacería salvaje, pues deja un rastro de destrucción y sangre tras su paso.    Mientras te preparas para un enfrentamiento encarnizado contra la Cacería salvaje, irás descubriendo una historia compleja y apasionante y conociendo a personajes inolvidables. Al explorar los Reinos del Norte, descubrirás que en cada pueblo y detrás de cada árbol y cada sombra hay misterios."
+    "description": "Eres Geralt de Rivia. A tu alrededor, los pueblos y asentamientos de los Reinos del Norte están desapareciendo a manos de un ejército invasor sobrenatural al que se conoce como Cacería salvaje, pues deja un rastro de destrucción y sangre tras su paso.    Mientras te preparas para un enfrentamiento encarnizado contra la Cacería salvaje, irás descubriendo una historia compleja y apasionante y conociendo a personajes inolvidables. Al explorar los Reinos del Norte, descubrirás que en cada pueblo y detrás de cada árbol y cada sombra hay misterios.",
+    "borrado": false
   },
   {
     "id": 5,
@@ -57,7 +52,8 @@
     "formato": "Digital",
     "multijugador": "No",
     "online": "No",
-    "description": "Rockstar sigue con su tradición de crear juegos originales y vanguardistas con argumentos irónicos y llenos de humor, y esta vez llega a un nuevo escenario: el patio del colegio. Encarnas a un travieso alumno que plantará cara a los abusones, soportará la presión de los profesores, gastará bromas, ganará o perderá a la chica y finalmente aprenderá a evitar los obstáculos del peor colegio privado de Estados Unidos, la Academia Bullworth, un lugar corrupto y decadente oculto tras una fachada estricta."
+    "description": "Rockstar sigue con su tradición de crear juegos originales y vanguardistas con argumentos irónicos y llenos de humor, y esta vez llega a un nuevo escenario: el patio del colegio. Encarnas a un travieso alumno que plantará cara a los abusones, soportará la presión de los profesores, gastará bromas, ganará o perderá a la chica y finalmente aprenderá a evitar los obstáculos del peor colegio privado de Estados Unidos, la Academia Bullworth, un lugar corrupto y decadente oculto tras una fachada estricta.",
+    "borrado": false
   },
   {
     "id": 6,
@@ -69,7 +65,8 @@
     "formato": "Digital",
     "multijugador": "Si",
     "online": "No",
-    "description": "League of Legends, es un videojuego multijugador de arena de batalla en línea desarrollado y publicado por Riot Games. Inspirándose en Defense of the Ancients, un mapa personalizado para Warcraft III, los fundadores de Riot buscaron desarrollar un juego independiente del mismo género"
+    "description": "League of Legends, es un videojuego multijugador de arena de batalla en línea desarrollado y publicado por Riot Games. Inspirándose en Defense of the Ancients, un mapa personalizado para Warcraft III, los fundadores de Riot buscaron desarrollar un juego independiente del mismo género",
+    "borrado": false
   },
   {
     "id": 7,
@@ -80,7 +77,8 @@
     "plataforma": "PS5",
     "multijugador": "NO",
     "online": "SI",
-    "description": "Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games."
+    "description": "Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games.",
+    "borrado": false
   },
   {
     "id": 8,
@@ -91,6 +89,7 @@
     "plataforma": "ps2",
     "multijugador": "no",
     "online": "no",
-    "description": "blaa"
+    "description": "blaa",
+    "borrado": false
   }
 ]

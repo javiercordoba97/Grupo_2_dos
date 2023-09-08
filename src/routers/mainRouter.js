@@ -27,5 +27,6 @@ router.post('/creacion',uploadFile.single("image") ,mainController.crearProcess)
 
 router.put('/edicion/:id',mainController.editarProcess)
 
+router.put('/edicion/:id',mainController.deleteProcess)
 
 module.exports = router;

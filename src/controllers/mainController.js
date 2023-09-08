@@ -5,7 +5,8 @@ let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/pro
 
 const controller = {
     home: (req, res)=>{
-        res.render('home',{productos: listaProductos})
+        let productosNoDelete=listaProductos.filter(p=>p.borrado==false)
+        res.render('home',{productos: productosNoDelete})
     },
     detalle:(req, res)=>{
         let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
@@ -59,32 +60,14 @@ const controller = {
         console.log(listaProductos)
         fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
         res.redirect('/')
+    },
+    deleteProcess: (req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        productoEncontrado.borrado=true
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
+
     }
-    /*
-    productRedDead2: (req, res)=>{
-        res.render('detalleRedDead2')
-    },
-    productHorizon: (req, res)=>{
-        res.render('detalleHorizon')
-    },
-    productAssassins: (req, res)=>{
-        res.render('detalleAssassins')
-    },
-    productWitcher: (req, res)=>{
-        res.render('detalleWitcher')
-    },
-    productDonQuijote: (req, res)=>{
-        res.render('detalleDonQuijote')
-    },
-    productOdisea: (req, res)=>{
-        res.render('detalleOdisea')
-    },
-    productCrimen: (req, res)=>{
-        res.render('detalleCrimen')
-    },
-    product1984: (req, res)=>{
-        res.render('detalle1984')
-    },*/
     
 }
 

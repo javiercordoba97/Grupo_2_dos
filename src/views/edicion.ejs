@@ -14,6 +14,9 @@
         <input value=<%=producto.descuento%> type="text" name="descueto" >
         <button type="submit">Crear</button>
       </form>
+      <form action="/edicion/<%=producto.id%>?_method=put" method="post" >
+        <button type="submit">Delete</button>
+      </form>
   
     </main>
   <%- include("partials/footer") %> 
