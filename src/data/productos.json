@@ -81,5 +81,16 @@
     "multijugador": "NO",
     "online": "SI",
     "description": "Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games."
+  },
+  {
+    "id": 8,
+    "titulo": "bully",
+    "precio": "1200",
+    "descuento": "20%",
+    "img": "1694190222729.jpg",
+    "plataforma": "ps2",
+    "multijugador": "no",
+    "online": "no",
+    "description": "blaa"
   }
 ]
