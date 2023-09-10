@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "RedDead2.jpg"
+    "img": "default.png"
   },
   {
     "id": 2,
@@ -82,14 +82,6 @@
   },
   {
     "id": 8,
-    "titulo": "bully",
-    "precio": "1200",
-    "descuento": "20%",
-    "img": "1694190222729.jpg",
-    "plataforma": "ps2",
-    "multijugador": "no",
-    "online": "no",
-    "description": "blaa",
-    "borrado": false
+    "img": "default.png"
   }
 ]

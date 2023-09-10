@@ -30,9 +30,10 @@ header{
     color: #fff;
    }
    .logo {
-       width: 9vw;
-       height: 7vw;
        margin-left: 10px;
+       margin-top: 10px;
+       width: 7vw;
+       height: 6vw;
    }
    *{
        margin: 0px;

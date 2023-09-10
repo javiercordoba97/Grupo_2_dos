@@ -6,19 +6,47 @@
 <body>
 
   <%- include("partials/header") %> 
-    <main>
-      <form action="/edicion/<%=producto.id%>?_method=put" method="post" >
-        <input value=<%=producto.titulo%> type="text" name="titulo" >
-        <input value=<%=producto.description%> type="text" name="description" >
-        <input value=<%=producto.precio%> type="number" name="precio" >
-        <input value=<%=producto.descuento%> type="text" name="descueto" >
-        <button type="submit">Crear</button>
+  <main>
+    <div class="login-container">
+      <h1>Editar Producto</h1>
+      <form action="/edicion/<%=producto.id%>?_method=put" method="post">
+
+        <label for="titulo">Nombre del producto:</label>
+        <input value=<%=producto.titulo%> type="text" id="titulo" name="titulo" required>
+
+
+        <label for="image">Imagen:</label>
+        <input value=<%=producto.img%> type="file" id="image" name="image" accept="image/*">
+
+
+        <label for="descuento">decuento:</label>
+        <input value=<%=producto.descuento%> type="text" id="descuento" name="descuento" required>
+
+        <label for="precio">Precio:</label>
+        <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
+
+        <label for="plataforma">Plataforma:</label>
+        <input value=<%=producto.plataforma%> id="plataforma" name="plataforma" required>
+
+        <label for="formato">Formato:</label>
+        <input value=<%=producto.formato%> id="formato" name="forma" required>
+
+        <label for="multijugador">Multijugador:</label>
+        <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
+
+        <label for="online">Online:</label>
+        <input value=<%=producto.online%> id="online" name="online" required>
+
+        <label for="description">Descripción:</label>
+        <input value=<%=producto.description%> id="description" name="description" required>
+
+        <button type="submit">Editar</button>
       </form>
-      <form action="/edicion/<%=producto.id%>?_method=put" method="post" >
+      <form action="/edicion/<%=producto.id%>?_method=put" method="post">
         <button type="submit">Delete</button>
       </form>
-  
-    </main>
+    </div>
+  </main>
   <%- include("partials/footer") %> 
 </body>
 
