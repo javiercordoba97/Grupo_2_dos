@@ -9,10 +9,10 @@
   <main>
     <div class="login-container">
       <h1>Editar Producto</h1>
-      <form action="/edicion/<%=producto.id%>?_method=put" method="post">
+      <form action="/edicion/<%=producto.id%>?_method=put" method="post" enctype="multipart/form-data">
 
         <label for="titulo">Nombre del producto:</label>
-        <input value=<%=producto.titulo%> type="text" id="titulo" name="titulo" required>
+        <input value=<%=producto.titulo%> type="text" id="titulo" name="titulo">
 
 
         <label for="image">Imagen:</label>
@@ -20,7 +20,7 @@
 
 
         <label for="descuento">decuento:</label>
-        <input value=<%=producto.descuento%> type="text" id="descuento" name="descuento" required>
+        <input value=<%=producto.descuento %> type="text" id="descuento" name="descuento" required>
 
         <label for="precio">Precio:</label>
         <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
@@ -35,7 +35,7 @@
         <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
 
         <label for="online">Online:</label>
-        <input value=<%=producto.online%> id="online" name="online" required>
+        <input value=<%= producto.online %> id="online" name="online" required>
 
         <label for="description">Descripción:</label>
         <input value=<%=producto.description%> id="description" name="description" required>

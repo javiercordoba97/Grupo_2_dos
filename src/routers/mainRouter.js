@@ -25,7 +25,7 @@ router.get('/creacion', mainController.creacion );
 
 router.post('/creacion',uploadFile.single("image") ,mainController.crearProcess)
 
-router.put('/edicion/:id',mainController.editarProcess)
+router.put('/edicion/:id',uploadFile.single("image"), mainController.editarProcess)
 
 router.put('/edicion/:id',mainController.deleteProcess)
 
