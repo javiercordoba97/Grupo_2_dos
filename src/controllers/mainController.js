@@ -1,6 +1,16 @@
+let fs = require('fs')
+let path = require('path')
+
+let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8')) 
+
 const controller = {
     home: (req, res)=>{
-        res.render('home')
+        let productosNoDelete=listaProductos.filter(p=>p.titulo)
+        res.render('home',{productos: productosNoDelete})
+    },
+    detalle:(req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        res.render('product', {producto: productoEncontrado})
     },
     register: (req, res)=>{
         res.render('register')
@@ -11,36 +21,58 @@ const controller = {
     cart: (req, res)=>{
         res.render('cart')
     },
-    edicion: (req, res)=>{
-        res.render('edicion')
-    },
     creacion: (req, res)=>{
         res.render('creacion')
     },
-    productRedDead2: (req, res)=>{
-        res.render('detalleRedDead2')
+    crearProcess:(req,res)=>{
+        let productoNuevo = {
+            "id":listaProductos.length+1,
+            "titulo": req.body.titulo,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "img": req.file ? req.file.filename : "default.png",
+            "plataforma": req.body.plataforma,
+            "formato": req.body.formato,
+            "multijugador": req.body.multijugador,
+            "online": req.body.online,
+            "description": req.body.description
+    }
+
+        listaProductos.push(productoNuevo)
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
     },
-    productHorizon: (req, res)=>{
-        res.render('detalleHorizon')
+    edicion: (req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        res.render('edicion', {producto: productoEncontrado})
     },
-    productAssassins: (req, res)=>{
-        res.render('detalleAssassins')
+    editarProcess:(req,res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        let indice= listaProductos.indexOf(productoEncontrado)
+        productoEncontrado = {
+            "id": productoEncontrado.id,
+            "titulo": req.body.titulo,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "img": req.file ? req.file.filename : "default.png",
+            "plataforma": req.body.plataforma,
+            "formato": req.body.formato,
+            "multijugador": req.body.multijugador,
+            "online": req.body.online,
+            "description": req.body.description
+        }
+        listaProductos[indice]= productoEncontrado
+        console.log(listaProductos)
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
     },
-    productWitcher: (req, res)=>{
-        res.render('detalleWitcher')
-    },
-    productDonQuijote: (req, res)=>{
-        res.render('detalleDonQuijote')
-    },
-    productOdisea: (req, res)=>{
-        res.render('detalleOdisea')
-    },
-    productCrimen: (req, res)=>{
-        res.render('detalleCrimen')
-    },
-    product1984: (req, res)=>{
-        res.render('detalle1984')
-    },
+    deleteProcess: (req, res)=>{
+        let productoEncontrado = listaProductos.find((p)=> p.id == req.params.id)
+        productoEncontrado.borrado=true
+        fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
+        res.redirect('/')
+
+    }
     
 }
 

@@ -8,51 +8,24 @@
     <%- include("partials/header") %> 
     <main>
         <section>
-            <h3 class="titulares">Juegos</h3>
+            <h3 class="titulares">Nuestros Productos</h3>
             <div class="productos">
-                <article>
-                    <a href="/productRedDead2">
-                        <img src="/img/RedDead2.jpg" alt="">
+                <% productos.forEach((p)=>{%>
+                <article class="product">
+                    <a href="/product/<%= p.id %>">
+                        <img src="/img/<%= p.img %>" alt="">
                         <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio">$12.000</p>
-                            <p class="descuento">30% OFF</p>
-                            <h4 class="descripcion">Red Dead Redemption 2</h4>
+                            <p class="precio"> $ <%= p.precio %></p>
+                            <p class="descuento"><%= p.descuento %> OFF</p>
+                            <h4 class="description"><%= p.titulo %></h4>
                         </div>
                     </a>
                 </article>
-                <article>
-                    <a href="/productHorizon">
-                        <img src="/img/horizon.jpg" alt="">
-                        <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio">$9.000</p>
-                            <p class="descuento">30% OFF</p>
-                            <h4 class="descripcion">horizon: Zero Dawn</h4>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="/productAssassins">
-                    <img src="/img/assassins.jpg" alt="">
-                    <div class="product-info"><i class="fas fa-truck"></i>
-                        <p class="precio">$7.000</p>
-                        <p class="descuento">30% OFF</p>
-                        <h4 class="descripcion">Assassins Creed Revelations</h4>
-                    </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="/productWitcher">
-                    <img src="/img/witcher.jpg" alt=""></a>
-                    <div class="product-info"><i class="fas fa-truck"></i>
-                        <p class="precio">$17.000</p>
-                        <p class="descuento">30% OFF</p>
-                        <h4 class="descripcion">The Witcher 3: Wild Hunt</h4>
-                    </div>
-                    </a>
-                </article>
+                <%})%>
             </div>
         </section>
 
+       <!--  
         <section>
             <h3 class="titulares">Libros</h3>
             <div class="productos">
@@ -97,7 +70,7 @@
                     </a>
                 </article>
             </div>
-        </section>
+        </section> -->
     </main>
     <%- include("partials/footer") %> 
 
