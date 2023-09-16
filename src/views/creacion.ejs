@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/head") %> 
+
+<body>
+
+  <%- include("partials/header") %> 
+  <main>
+    <div class="login-container">
+    <h1>Creación de Productos</h1>
+    <form id="product-form" action="/creacion" method="post" enctype="multipart/form-data">
+        <label for="titulo">Nombre del producto:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        
+                
+        <label for="image">Imagen:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        
+
+        <label for="descuento">decuento:</label>
+        <input type="text" id="descuento" name="descuento" required>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" required>
+
+        <label for="plataforma">Plataforma:</label>
+        <input id="plataforma" name="plataforma" required>
+
+        <label for="formato">Formato:</label>
+        <input id="formato" name="forma" required>
+
+        <label for="multijugador">Multijugador:</label>
+        <input id="multijugador" name="multijugador" required>
+
+        <label for="online">Online:</label>
+        <input id="online" name="online" required>
+
+        <label for="description">Descripción:</label>
+        <input id="description" name="description" required>
+        
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+<script src="script.js"></script>
+
+</html>
+</main>
+
+  <%- include("partials/footer") %> 
+</body>
+
+</html>
