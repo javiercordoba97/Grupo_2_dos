@@ -10,5 +10,23 @@
     "usuario": "Prueba",
     "contraseña": "prueba",
     "email": "prueba@gmail.com"
+  },
+  {
+    "id": 4,
+    "usuario": "lalal",
+    "contraseña": "lalal",
+    "email": "asdadad@gmail.com"
+  },
+  {
+    "id": 5,
+    "usuario": "pppp",
+    "contraseña": "pppppppp",
+    "email": "ppppp@gmail.com"
+  },
+  {
+    "id": 1695773193092,
+    "usuario": "nununu",
+    "contraseña": "nunununu",
+    "email": "nunun@gmail.com"
   }
 ]

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const mainController = require('../controllers/mainController');
+const userController = require('../controllers/userController');
 const multer = require('multer')
 const path = require('path')
 const storage = multer.diskStorage({
@@ -15,7 +15,12 @@ const storage = multer.diskStorage({
 })
 const uploadFile = multer({storage})
 
-router.get('/', mainController.home );
+router.get('/register', userController.register );
+router.get('/login', userController.login );
+
+
+
+router.post('/register', userController.registerProcess)
 
 
 module.exports = router;
