@@ -173,6 +173,9 @@ article img{
     --clip: polygon (0 0, 100% , 0 0)
 }
 
+.delete{
+    background-color: red;
+}
 
 
 

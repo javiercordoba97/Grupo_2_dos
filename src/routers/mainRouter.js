@@ -23,10 +23,14 @@ router.get('/cart', mainController.cart );
 router.get('/edicion/:id', mainController.edicion );
 router.get('/creacion', mainController.creacion );
 
+
 router.post('/creacion',uploadFile.single("image") ,mainController.crearProcess)
+
+router.post('/register', mainController.registerProcess)
 
 router.put('/edicion/:id',uploadFile.single("image"), mainController.editarProcess)
 
-router.put('/edicion/:id',mainController.deleteProcess)
+router.delete('/edicion/:id',mainController.deleteProcess)
+
 
 module.exports = router;

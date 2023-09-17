@@ -2,7 +2,7 @@
   {
     "id": 1,
     "titulo": "Red Dead Redemption 2",
-    "precio": "12.000",
+    "precio": "12000",
     "descuento": "30%",
     "img": "RedDead2.jpg",
     "plataforma": "PS4",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "titulo": "Horizon Zero Dawn",
-    "precio": "9.000",
+    "precio": "9000",
     "descuento": "30%",
     "img": "horizon.jpg",
     "plataforma": "PS4",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "titulo": "Assassins Creed Revelations",
-    "precio": "7.000",
+    "precio": "7000",
     "descuento": "30%",
     "img": "assassins.jpg",
     "plataforma": "PS4",
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "titulo": "The Witcher",
-    "precio": "15.000",
+    "precio": "15000",
     "descuento": "30%",
     "img": "witcher.jpg",
     "plataforma": "PS5",
@@ -91,6 +91,14 @@
   },
   {
     "id": 8,
-    "img": "default.png"
+    "titulo": "prueba",
+    "precio": "1000000",
+    "descuento": "1%",
+    "img": "1694946242433.png",
+    "plataforma": "Visual Studio",
+    "multijugador": "No",
+    "online": "Si",
+    "description": "Prueba de Delete ",
+    "borrado": true
   }
 ]

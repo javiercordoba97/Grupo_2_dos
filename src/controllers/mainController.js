@@ -2,10 +2,11 @@ let fs = require('fs')
 let path = require('path')
 
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8')) 
+let listaUsuarios = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/users.json'),'utf-8'))
 
 const controller = {
     home: (req, res)=>{
-        let productosNoDelete=listaProductos.filter(p=>p.titulo)
+        let productosNoDelete=listaProductos.filter(p=>p.borrado==false)
         res.render('home',{productos: productosNoDelete})
     },
     detalle:(req, res)=>{
@@ -71,9 +72,19 @@ const controller = {
         productoEncontrado.borrado=true
         fs.writeFileSync(path.join(__dirname,'../data/productos.json'),JSON.stringify(listaProductos,null,2),'utf-8')
         res.redirect('/')
-
+    },
+    registerProcess:(req,res)=>{
+        let usuarioNuevo = {
+            "id":listaUsuarios.length+1,
+            "usuario": req.body.users,
+            "contraseña": req.body.password,
+            "email": req.body.email
     }
     
+        listaUsuarios.push(usuarioNuevo)
+        fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
+        res.redirect('/')
+    }  
 }
 
 module.exports = controller;

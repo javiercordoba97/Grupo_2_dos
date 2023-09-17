@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "Usuario": "Primer Prueba",
+    "Contraseña": "1234",
+    "Email": "Probando@usuario.com"
+  },
+  {
+    "id": 2,
+    "usuario": "Prueba",
+    "contraseña": "prueba",
+    "email": "prueba@gmail.com"
+  }
+]
