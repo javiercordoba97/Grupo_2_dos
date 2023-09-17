@@ -29,7 +29,8 @@ const productController = {
             "formato": req.body.formato,
             "multijugador": req.body.multijugador,
             "online": req.body.online,
-            "description": req.body.description
+            "description": req.body.description,
+            "borrado": false
     }
 
         listaProductos.push(productoNuevo)
@@ -53,7 +54,8 @@ const productController = {
             "formato": req.body.formato,
             "multijugador": req.body.multijugador,
             "online": req.body.online,
-            "description": req.body.description
+            "description": req.body.description,
+            "borrado": false
         }
         listaProductos[indice]= productoEncontrado
         console.log(listaProductos)

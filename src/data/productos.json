@@ -79,14 +79,14 @@
   },
   {
     "id": 7,
-    "titulo": "GTA V ",
+    "titulo": "GTA",
     "precio": "12500",
     "descuento": "15%",
-    "img": "GTA_V.jpg",
+    "img": "1694987209471.jpg",
     "plataforma": "PS5",
     "multijugador": "NO",
     "online": "SI",
-    "description": "Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games.",
+    "description": "Grand",
     "borrado": false
   },
   {
@@ -100,5 +100,29 @@
     "online": "Si",
     "description": "Prueba de Delete ",
     "borrado": true
+  },
+  {
+    "id": 9,
+    "titulo": "A",
+    "precio": "700",
+    "descuento": "5%",
+    "img": "1694987252543.jpg",
+    "plataforma": "Ps4",
+    "multijugador": "Si",
+    "online": "Si",
+    "description": "Este",
+    "borrado": false
+  },
+  {
+    "id": 10,
+    "titulo": "Combo Need for Speed",
+    "precio": "4200",
+    "descuento": "30%",
+    "img": "1694986776646.jpg",
+    "plataforma": "Ps3",
+    "multijugador": "SI",
+    "online": "Si",
+    "description": "Un combo para disfrutar por tres la adrenalina de las pistas y la persecución. Los jugadores podrán elegir entre cientos de autos y docenas de entornos donde desarrollar sus aventuras que incluirán siempre ladrones, policías, clandestinidad, apuestas y mucha acción para ganar sus recompensas a cualquier precio.",
+    "borrado": false
   }
 ]

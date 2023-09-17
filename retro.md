@@ -22,8 +22,3 @@ Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el des
 
 Sprint 2. Seguimos arrastrando la falta de comunicacion del sprint anterior. Hay muy poco interaccion en discord y se termina acumulando todo para el final. Sin embargo, llegamos a las entregas, pero todo podria ser mucho mas coordinado y eficiente.
 
-### Lucas Marandino
-
-Agregar retrospectiva
-
-

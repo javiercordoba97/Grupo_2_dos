@@ -117,6 +117,15 @@ header{
     background-color: #007bff;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
    }
+   .botonDeEdicion{
+    font-family: fantasy;
+    color: #fff;
+    background-color: #00ff00be;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+   .botonDeEdicion:hover{
+    background-color: #209103;
+  }
 
    
    /*__________________FOOTER______________________*/
