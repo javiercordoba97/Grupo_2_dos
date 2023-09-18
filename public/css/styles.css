@@ -26,6 +26,7 @@ body{
 
 /*__________________HEADER______________________*/
 header{
+    width:100vw;
     background-color:#134d64b7;
     color: #fff;
    }
@@ -188,6 +189,7 @@ article img{
 
 /*__________________FOOTER______________________*/
 footer {
+    width:100vw;
     background-color:#134d64b7;
     padding: 20px;
     display: flex;
