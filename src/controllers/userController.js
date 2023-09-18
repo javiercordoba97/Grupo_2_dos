@@ -22,7 +22,11 @@ const userController = {
         listaUsuarios.push(usuarioNuevo)
         fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
         res.redirect('/')
-    }  
+    },
+    profile: (req, res)=>{
+        let usuarioEncontrado = listaUsuarios.find((p)=> p.id == req.params.id)
+        res.render('users/profile', {usuario: usuarioEncontrado})
+    }
 }
 
 module.exports = userController;

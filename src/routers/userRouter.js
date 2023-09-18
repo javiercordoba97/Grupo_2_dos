@@ -17,7 +17,8 @@ const uploadFile = multer({storage})
 
 router.get('/register', userController.register );
 router.post('/register',uploadFile.single("userImage") ,userController.registerProcess)
-router.get('/login', userController.login );
+router.get('/login', userController.login )
+router.get('/profile/:id', userController.profile )
 
 
 

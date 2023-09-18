@@ -177,6 +177,13 @@ article img{
     background-color: red;
 }
 
+.datosUsuario{
+    color: white;
+    text-align: center;
+}
+.datosUsuario li{
+    list-style-type: none
+}
 
 
 /*__________________FOOTER______________________*/
