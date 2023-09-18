@@ -10,22 +10,26 @@
     <main>
         <div class="login-container">
             <h1>CREA TU CUENTA</h1>
-            <form action="/register" method="post">
+            <form action="/register" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="users">Usuario:</label>
+
+                    <label for="userImage">Imagen de perfil</label>
+                    <input type="file" id="userImage" name="userImage" accept="image/*">
+
+                    <label for="users">Usuario</label>
                     <input type="text" id="users" name="users" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="password">Contraseña:</label>
+                    <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Repetir Contraseña:</label>
+                    <label for="confirm-password">Repetir Contraseña</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Correo Electronico:</label>
+                    <label for="email">Correo Electronico</label>
                     <input type="Email" id="email" name="email" required>
                 </div>
                 

@@ -13,6 +13,7 @@ const userController = {
     registerProcess:(req,res)=>{
         let usuarioNuevo = {
             "id":Date.now() + Math.round(Math.random()* 1E9),
+            "img": req.file ? req.file.filename : "defaultUsers.png",
             "usuario": req.body.users,
             "contraseña": req.body.password,
             "email": req.body.email
