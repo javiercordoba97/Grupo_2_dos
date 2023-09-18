@@ -16,6 +16,8 @@ Sprint 1. En retrospección, Mi mea culpa de haberme perdido la reunión grupal 
 
 Sprint 2. Retro. No podemos coordinar como equipo un dia y horario para armar una weekly y definir tareas, los objetivos son alcanzados, pero por separado. falta un poco de comunicación.
 
+Sprint 3 Retro. Veo que la comunicacion está fluyendo mas entre el equipo. No es mi caso que estuve supercolgado y no participe. A mejorar, tendré mas participación en Discord que es donde se coordina el trabajo.
+
 ### Guido Salustri
 
 Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
