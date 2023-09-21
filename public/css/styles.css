@@ -186,6 +186,10 @@ article img{
     list-style-type: none
 }
 
+.datosUsuario li h2{
+    margin-bottom: 15px;
+}
+
 
 /*__________________FOOTER______________________*/
 footer {
