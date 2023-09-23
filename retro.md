@@ -10,7 +10,13 @@ Sprint 3, 4 y 5. No estuvimos avanzando como deberíamos, pasamos la mayor parte
 
 ### Javier Cordoba
 
-Como retrospectiva creo que deberiamos mejorar un poco la comunicaion para que el sprint quede similar en todas sus paginas. Creo que deberiamos hacer una reunion por discor o zoom por semana para aclarar dudas y concretar como va a ser el proyecto.
+Sprint 1: Como retrospectiva creo que deberiamos mejorar un poco la comunicaion para que el sprint quede similar en todas sus paginas. Creo que deberiamos hacer una reunion por discor o zoom por semana para aclarar dudas y concretar como va a ser el proyecto.
+
+Sprint 2: Por mi parte no aporte lo suficiente en este sprint. creo que hace falta mejorar la comunicacion y la distribucion de tareas.
+
+Sprint 3: Sigue haciendo falta organizarnos un poco mas, talvez hacer una reunion por zoom a la semana asi vemos como podemos organizarnos y que debe hacer cada uno.
+
+Sprint 4: Mejoramos en la comunicacion y estamos implementando mas el uso del tablero, nos queda ponernos al dia con los sprints, pero estamos mejorando.
 
 ### Lucas Botto
 

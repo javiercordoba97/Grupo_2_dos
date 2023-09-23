@@ -12,12 +12,13 @@
             <ul>
                 <li><h2> Datos de usuario </h2></li>
                     <div>
-                        <li> Imagen: <%= usuario.img %> </li>
+                        <img class="imagenUsuario" src="/img/users/<%= usuario.img %>" alt="">
                         <li> Usuario: <%= usuario.usuario %> </li>
                         <li> Contraseña: <%= usuario.contraseña %> </li>
                         <li> Email: <%= usuario.email %> </li>
-                        <li><button class="botonDeCompra">Editar Perfil</button></li>
                     </div>
+                        <form action="/edicionUsuario/<%= usuario.id %>"><li><button class="botonDeCompra">Editar Perfil</button></li></form>
+
             </ul>
         </div>
     </main>

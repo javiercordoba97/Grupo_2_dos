@@ -16,7 +16,8 @@ const userController = {
             "img": req.file ? req.file.filename : "defaultUsers.png",
             "usuario": req.body.users,
             "contraseña": req.body.password,
-            "email": req.body.email
+            "email": req.body.email,
+            "borrado": false
     }
     
         listaUsuarios.push(usuarioNuevo)
@@ -26,7 +27,33 @@ const userController = {
     profile: (req, res)=>{
         let usuarioEncontrado = listaUsuarios.find((p)=> p.id == req.params.id)
         res.render('users/profile', {usuario: usuarioEncontrado})
-    }
+    },
+    edicionUsuario: (req, res)=>{
+        let usuarioEncontrado = listaUsuarios.find((p)=> p.id == req.params.id)
+        res.render('users/edicionUsuario', {usuario: usuarioEncontrado})
+    },
+    editarUsuario:(req,res)=>{
+        let usuarioEncontrado = listaUsuarios.find((p)=> p.id == req.params.id)
+        let indice= listaUsuarios.indexOf(usuarioEncontrado)
+        usuarioEncontrado = {
+            "id": usuarioEncontrado.id,
+            "img": req.file ? req.file.filename : "defaultUsers.png",
+            "usuario": req.body.users,
+            "contraseña": req.body.password,
+            "email": req.body.email,
+            "borrado": false
+        }
+        listaUsuarios[indice]= usuarioEncontrado
+        console.log(listaUsuarios)
+        fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
+        res.redirect('/')
+    },
+    deleteUsuario: (req, res)=>{
+        let usuarioEncontrado = listaUsuarios.find((p)=> p.id == req.params.id)
+        usuarioEncontrado.borrado=true
+        fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
+        res.redirect('/')
+    },
 }
 
 module.exports = userController;

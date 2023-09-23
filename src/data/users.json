@@ -19,5 +19,21 @@
     "usuario": "Cosme",
     "contraseña": "Fulanito",
     "email": "QuienEs@Homero.com"
+  },
+  {
+    "id": 1695844520604,
+    "img": "defaultUsers.png",
+    "usuario": "zzzzz",
+    "contraseña": "zzzzzz",
+    "email": "zzzzz@zzz.zz",
+    "borrado": true
+  },
+  {
+    "id": 1695479953001,
+    "img": "1695445180000.jpg",
+    "usuario": "troy macclure",
+    "contraseña": "talvez",
+    "email": "troy@macclure",
+    "borrado": false
   }
 ]

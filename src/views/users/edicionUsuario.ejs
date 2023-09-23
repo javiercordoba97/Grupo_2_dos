@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %> 
+
+<body>
+
+    <%- include("../partials/header") %> 
+
+    <main>
+        <div class="login-container">
+            <h1>EDITA TU PERFIL</h1>
+            <img class="imagenUsuario" src="/img/users/<%= usuario.img %>" alt="">
+            <form action="/edicion/<%=usuario.id%>?_method=put" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+
+                    <label for="userImage">Imagen de perfil</label>
+                    <input value=<%=usuario.img%> type="file" id="userImage" name="userImage" accept="image/*">
+
+                    <label for="users">Usuario</label>
+                    <input value=<%=usuario.usuario%> type="text" id="users" name="users" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Repetir Contraseña</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico</label>
+                    <input value=<%=usuario.email%> type="Email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit">Editar</button>
+            </form>
+            <form action="/edicionUsuario/<%=usuario.id%>?_method=Delete" method="post">
+                <button class="delete" type="submit">Delete</button>
+              </form>
+        </div>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
