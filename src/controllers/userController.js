@@ -14,8 +14,12 @@ const userController = {
         let usuarioNuevo = {
             "id":Date.now() + Math.round(Math.random()* 1E9),
             "img": req.file ? req.file.filename : "defaultUsers.png",
-            "usuario": req.body.users,
+            "nombre": req.body.name,
+            "apellido": req.body.last_name,
             "contraseña": req.body.password,
+            "dni": req.body.name,
+            "telefono": req.body.name,
+            "direccion": req.body.address,
             "email": req.body.email,
             "borrado": false
     }
