@@ -6,6 +6,8 @@ En retrospectiva del Sprint 1, utilizando la dinámica de la estrella de mar, cr
 
 Sprint 2. Claramente seguimos con falta de comunicación y trabajo grupal, si bien se pudo coordinar mejor seguimos trabajando en su mayoria de forma individual.
 
+Sprint 3, 4 y 5. No estuvimos avanzando como deberíamos, pasamos la mayor parte con muy pocos avances, ultimamente venimos mejorando la colaboración como grupo y la comunicación, es algo que tenemos que mantener de ahora en más para poder mantenernos al día.
+
 ### Javier Cordoba
 
 Como retrospectiva creo que deberiamos mejorar un poco la comunicaion para que el sprint quede similar en todas sus paginas. Creo que deberiamos hacer una reunion por discor o zoom por semana para aclarar dudas y concretar como va a ser el proyecto.
