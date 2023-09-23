@@ -10,7 +10,7 @@
     "multijugador": "Si",
     "online": "No",
     "description": "Red Dead Redemption 2 es un videojuego de acción-aventura western basado en el drama. Un juego bastante conocido también por sus cantidades de detalles realistas en un mundo abierto y en perspectiva de primera y tercera persona, ​ con componentes para un jugador y multijugador.​ Fue desarrollado por Rockstar Games",
-    "borrado": false
+    "borrado": true
   },
   {
     "id": 2,
@@ -75,7 +75,7 @@
     "multijugador": "Si",
     "online": "No",
     "description": "League of Legends, es un videojuego multijugador de arena de batalla en línea desarrollado y publicado por Riot Games. Inspirándose en Defense of the Ancients, un mapa personalizado para Warcraft III, los fundadores de Riot buscaron desarrollar un juego independiente del mismo género",
-    "borrado": false
+    "borrado": true
   },
   {
     "id": 7,
