@@ -13,8 +13,12 @@
                 <li><h2> Datos de usuario </h2></li>
                     <div>
                         <img class="imagenUsuario" src="/img/users/<%= usuario.img %>" alt="">
-                        <li> Usuario: <%= usuario.usuario %> </li>
+                        <li> Nombre: <%= usuario.nombre %> </li>
+                        <li> Apellido: <%= usuario.apellido %> </li>
                         <li> Contraseña: <%= usuario.contraseña %> </li>
+                        <li> DNI: <%= usuario.dni %> </li>
+                        <li> Teléfono: <%= usuario.telefono %> </li>
+                        <li> Dirección: <%= usuario.direccion %> </li>
                         <li> Email: <%= usuario.email %> </li>
                     </div>
                         <form action="/edicionUsuario/<%= usuario.id %>"><li><button class="botonDeCompra">Editar Perfil</button></li></form>

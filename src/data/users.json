@@ -35,5 +35,17 @@
     "contraseña": "talvez",
     "email": "troy@macclure",
     "borrado": false
+  },
+  {
+    "id": 1696121257755,
+    "img": "1695504938516.png",
+    "nombre": "Cuidado",
+    "apellido": "Hombre Radioactivo",
+    "contraseña": "prueba",
+    "dni": "Cuidado",
+    "telefono": "Cuidado",
+    "direccion": "algun lugar",
+    "email": "hombre@radioactivo.com",
+    "borrado": false
   }
 ]
