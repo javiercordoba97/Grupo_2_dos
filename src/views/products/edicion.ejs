@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("../partials/head") %> 
+<%- include("../partials/head") %>
 
-<body>
+  <body>
 
-  <%- include("../partials/header") %> 
-  <main>
-    <div class="login-container">
-      <h1>Editar Producto</h1>
-      <form action="/edicion/<%=producto.id%>?_method=put" method="post" enctype="multipart/form-data">
+    <%- include("../partials/header") %>
+      <main>
+        <div class="login-container">
+          <h1>Editar Producto</h1>
+          <form action="/edicion/<%=producto.id%>?_method=put" method="post" enctype="multipart/form-data">
 
-        <label for="titulo">Nombre del producto:</label>
-        <input value=<%=producto.titulo%> type="text" id="titulo" name="titulo">
-
-
-        <label for="image">Imagen:</label>
-        <input value=<%=producto.img%> type="file" id="image" name="image" accept="image/*">
+            <label for="titulo">Nombre del producto:</label>
+            <input value=<%=producto.titulo%> type="text" id="titulo" name="titulo">
 
 
-        <label for="descuento">decuento:</label>
-        <input value=<%=producto.descuento %> type="text" id="descuento" name="descuento" required>
+            <label for="image">Imagen:</label>
+            <input value=<%=producto.img%> type="file" id="image" name="image" accept="image/*">
 
-        <label for="precio">Precio:</label>
-        <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
 
-        <label for="plataforma">Plataforma:</label>
-        <input value=<%=producto.plataforma%> id="plataforma" name="plataforma" required>
+            <label for="descuento">decuento:</label>
+            <input value=<%=producto.descuento %> type="text" id="descuento" name="descuento" required>
 
-        <label for="formato">Formato:</label>
-        <input value=<%=producto.formato%> id="formato" name="forma" required>
+            <label for="precio">Precio:</label>
+            <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
 
-        <label for="multijugador">Multijugador:</label>
-        <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
+            <label for="plataforma">Plataforma:</label>
+            <input value=<%=producto.plataforma%> id="plataforma" name="plataforma" required>
 
-        <label for="online">Online:</label>
-        <input value=<%= producto.online %> id="online" name="online" required>
+            <label for="formato">Formato:</label>
+            <input value=<%=producto.formato%> id="formato" name="forma" required>
 
-        <label for="description">Descripción:</label>
-        <input value=<%=producto.description%> id="description" name="description" required>
+            <label for="multijugador">Multijugador:</label>
+            <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
 
-        <button type="submit">Editar</button>
-      </form>
-      <form action="/edicion/<%=producto.id%>?_method=Delete" method="post">
-        <button class="delete" type="submit">Delete</button>
-      </form>
-    </div>
-  </main>
-  <%- include("../partials/footer") %> 
-</body>
+            <label for="online">Online:</label>
+            <input value=<%=producto.online %> id="online" name="online" required>
+
+            <label for="description">Descripción:</label>
+            <input value=<%=producto.description%> id="description" name="description" required>
+
+            <button type="submit">Editar</button>
+          </form>
+          <form action="/edicion/<%=producto.id%>?_method=Delete" method="post">
+            <button class="delete" type="submit">Delete</button>
+          </form>
+        </div>
+      </main>
+      <%- include("../partials/footer") %>
+  </body>
 
 </html>

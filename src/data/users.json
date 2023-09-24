@@ -47,5 +47,17 @@
     "direccion": "algun lugar",
     "email": "hombre@radioactivo.com",
     "borrado": false
+  },
+  {
+    "id": 1695762127168,
+    "img": "defaultUsers.png",
+    "nombre": "señor",
+    "apellido": "burns",
+    "contraseña": "123456878",
+    "dni": "señor",
+    "telefono": "señor",
+    "direccion": "avenida siempre viva",
+    "email": "burns@smithers.com",
+    "borrado": false
   }
 ]

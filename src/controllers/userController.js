@@ -1,11 +1,17 @@
 let fs = require('fs')
 let path = require('path')
-
+const {validationResult} = require ('express-validator');
 let listaUsuarios = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/users.json'),'utf-8'))
 
 const userController = {
     register: (req, res)=>{
+        let errors = validationResult(req);
+        if (errors.isEmpty()){
         res.render('users/register')
+    }else{
+        res.render('register',{errors:errors.mapped(), old:req.body});
+    }
+    
     },
     login: (req, res)=>{
         res.render('users/login')
@@ -23,7 +29,6 @@ const userController = {
             "email": req.body.email,
             "borrado": false
     }
-    
         listaUsuarios.push(usuarioNuevo)
         fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
         res.redirect('/')
