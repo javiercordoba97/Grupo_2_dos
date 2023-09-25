@@ -59,5 +59,17 @@
     "direccion": "avenida siempre viva",
     "email": "burns@smithers.com",
     "borrado": false
+  },
+  {
+    "id": 1696536750819,
+    "img": "defaultUsers.png",
+    "nombre": "hash",
+    "apellido": "bcrypt",
+    "contraseña": "$2a$10$x9u92QosbobdgZSGcCpz8ui04M.rCn1n8KmV/BOAQg7Nrm8pRbkRa",
+    "dni": "hash",
+    "telefono": "hash",
+    "direccion": "123 hash",
+    "email": "hash@probando",
+    "borrado": false
   }
 ]
