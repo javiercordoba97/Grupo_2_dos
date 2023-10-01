@@ -23,7 +23,7 @@
     "multijugador": "No",
     "online": "No",
     "description": "Horizon: Zero Dawn es un juego de aventuras en mundo abierto, con dosis acción y exploración en tercera persona a cargo de Guerrilla Games, responsables de Killzone. Ambientado en un futuro apocalíptico distante, los seres humanos han experimentado una regresión tecnológica que los ha devuelto a la edad de piedra y dividido en tribus. Encarnando a Aloy, una hábil cazadora, deberemos descubrir secretos del pasado, así como sobrevivir en un nuevo mundo plagado de criaturas robóticas inteligentes, hostiles y muy peligrosas.",
-    "borrado": false
+    "borrado": true
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "multijugador": "No",
     "online": "No",
     "description": "Assassin's Creed: Revelations es un videojuego desarrollado por Ubisoft Montreal y distribuido por Ubisoft. Es el cuarto juego de la serie, siendo así la secuela directa del videojuego de 2010, Assassin's Creed: Brotherhood.",
-    "borrado": false
+    "borrado": true
   },
   {
     "id": 4,
@@ -106,11 +106,11 @@
     "titulo": "A",
     "precio": "700",
     "descuento": "5%",
-    "img": "1694987252543.jpg",
+    "img": "default.png",
     "plataforma": "Ps4",
     "multijugador": "Si",
     "online": "Si",
-    "description": "Este",
+    "description": "aaa",
     "borrado": false
   },
   {

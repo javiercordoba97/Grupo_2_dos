@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("../partials/head") %> 
+<%- include("../partials/head") %>
 
-<body>
+    <body>
 
-    <%- include("../partials/header") %> 
-    <main>
-        <section>
-            <h3 class="titulares">Nuestros Productos</h3>
-            <div class="productos">
-                <% productos.forEach((p)=>{%>
-                <article class="product">
-                    <a href="/product/<%= p.id %>">
-                        <img src="/img/products/<%= p.img %>" alt="">
-                        <div class="product-info"><i class="fas fa-truck"></i>
-                            <p class="precio"> $ <%= p.precio %></p>
-                            <p class="descuento"><%= p.descuento %> OFF</p>
-                            <h4 class="description"><%= p.titulo %></h4>
-                        </div>
-                    </a>
-                </article>
-                <%})%>
-            </div>
-        </section>
-    </main>
-    <%- include("../partials/footer") %> 
+        <%- include("../partials/header") %>
+            <main>
+                <section class="inicio">
+                <div class="contenidoCat">
+                    <div class="categorias">
+                        <h3 class="categorias">CATEGORIAS</h3>
+                        <ul>
+                            <li><a href="#"> Especiales!</a></li>
+                            <li><a href="#">Novedades</a></li>
+                            <li><a href="#">Free to Play</a></li>
+                            <li><a href="#">Acción</a></li>
+                            <li><a href="#">Aventuras</a></li>
+                            <li><a href="#">Juegos MMO</a></li>
+                            <li><a href="#">Deportes y Carreras</a></li>
+                            <li><a href="#">Estrategia</a></li>
+                            <li><a href="#">Coopertativos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contenidoPrincipal">
+                    <h3 class="titulares">Nuestros Productos</h3>
+                    <div class="productos">
+                        <% productos.forEach((p)=>{%>
+                            <article class="product">
+                                <a href="/product/<%= p.id %>">
+                                    <img src="/img/products/<%= p.img %>" alt="">
+                                    <div class="product-info"><i class="fas fa-truck"></i>
+                                        <p class="precio"> $ <%= p.precio %>
+                                        </p>
+                                        <p class="descuento">
+                                            <%= p.descuento %> OFF
+                                        </p>
+                                        <h4 class="description">
+                                            <%= p.titulo %>
+                                        </h4>
+                                    </div>
+                                </a>
+                            </article>
+                            <%})%>
+                    </div>
+                </div>
+            </section>
+            </main>
+            <%- include("../partials/footer") %>
 
-</body>
+    </body>
 
 </html>
