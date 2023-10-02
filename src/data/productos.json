@@ -124,5 +124,16 @@
     "online": "Si",
     "description": "Un combo para disfrutar por tres la adrenalina de las pistas y la persecución. Los jugadores podrán elegir entre cientos de autos y docenas de entornos donde desarrollar sus aventuras que incluirán siempre ladrones, policías, clandestinidad, apuestas y mucha acción para ganar sus recompensas a cualquier precio.",
     "borrado": false
+  },
+  {
+    "id": 11,
+    "titulo": "Mario Kart",
+    "precio": "15000",
+    "descuento": "25%",
+    "img": "default.png",
+    "multijugador": "Si",
+    "online": "Si",
+    "description": "PC ",
+    "borrado": false
   }
 ]

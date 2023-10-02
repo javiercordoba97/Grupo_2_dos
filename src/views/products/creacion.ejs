@@ -6,7 +6,7 @@
   <body>
 
     <%- include("../partials/header") %>
-      <main>
+      <main class="login">
         <div class="login-container">
           <h1>Vende tu Juego!</h1>
           <form id="product-form" action="/creacion" method="post" enctype="multipart/form-data">
@@ -29,7 +29,7 @@
 
             <label for="online">Online</label>
             <input id="online" name="online" required>
-
+            
             <label for="categoria">Seleciona la categoria</label>
             <select id="categoria" name="categoria" required>
               <option>Aventuras</option>
@@ -39,6 +39,9 @@
               <option>Coopertativos</option>
               <option>Deportes y Carreras</option>
             </select>
+
+            <label for="estreno">Fecha de lanzamiento</label>
+            <input type="date" id="estreno" name="estreno" required>
 
             <label for="description">Descripción</label>
             <input id="description" name="description" required>

@@ -6,7 +6,7 @@
   <body>
 
     <%- include("../partials/header") %>
-      <main>
+      <main class="login">
         <div class="login-container">
           <h1>Editar Producto</h1>
           <form action="/edicion/<%=producto.id%>?_method=put" method="post" enctype="multipart/form-data">
@@ -24,12 +24,6 @@
 
             <label for="precio">Precio:</label>
             <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
-
-            <label for="plataforma">Plataforma:</label>
-            <input value=<%=producto.plataforma%> id="plataforma" name="plataforma" required>
-
-            <label for="formato">Formato:</label>
-            <input value=<%=producto.formato%> id="formato" name="forma" required>
 
             <label for="multijugador">Multijugador:</label>
             <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
