@@ -1,5 +1,6 @@
 let fs = require('fs')
 let path = require('path')
+const db = require("../database/models")
 
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8'))
 

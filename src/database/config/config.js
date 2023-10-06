@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "username": "330160",
+    "password": "grupo2dos",
+    "database": "mediaheaven_db",
+    "host": "mysql-mediaheaven.alwaysdata.net",
     "dialect": "mysql"
   },
   "test": {
