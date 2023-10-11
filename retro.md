@@ -26,6 +26,8 @@ Sprint 2. Retro. No podemos coordinar como equipo un dia y horario para armar un
 
 Sprint 3 Retro. Veo que la comunicacion está fluyendo mas entre el equipo. No es mi caso que estuve supercolgado y no participe. A mejorar, tendré mas participación en Discord que es donde se coordina el trabajo.
 
+Sprint 4 Retro. Notable mejora en la organización de Trello, y en la división de tareas. Nos falta trabajar mas en conjunto, pero vamos avanzando completando las tareas por separado.
+
 ### Guido Salustri
 
 Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
