@@ -4,6 +4,20 @@ const db = require("../database/models")
 
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8'))
 
+
+/* Controlador con Base de Datos, faltan agregar creación, edición y delete */
+const productController = {
+    detalle: async (req, res) => {
+        let productoEncontrado = await db.juegos.findByPk(req.params.id)
+        res.render ('products/product', {producto: productoEncontrado})
+    },
+    cart: async (req, res) => {
+        res.render('products/cart')
+    }
+}
+
+/* Controlador sin Base de Datos */
+/*
 const productController = {
     home: (req, res)=>{
         let productosNoDelete=listaProductos.filter(p=>p.borrado==false)
@@ -70,5 +84,6 @@ const productController = {
         res.redirect('/')
     },
 }
+*/
 
 module.exports = productController;
