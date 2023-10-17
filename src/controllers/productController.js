@@ -39,7 +39,27 @@ const productController = {
     edicion: async function (req, res) {
         let productoEncontrado = await db.juegos.findByPk(req.params.id)
         res.render ('/edicion', {producto: productoEncontrado})
+    },
+    editarProcess: async function (req,res) {
+        let productoEncontrado = await db.juegos.update({
+            "id": productoEncontrado.id,
+            "nombre": req.body.nombre,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "imagen": req.file ? req.file.filename : "default.png",
+            "estreno": req.body.fecha,
+            "categoria": req.body.id_genero,
+            "descripcion": req.body.descripcion,
+            "rating": req.body.rating,
+            "borrado": false 
+        }, {where: {id: req.params.id}})
+        res.redirect('/product/' + productoEncontrado.id)
+    },
+    deleteProcess: async function (req, res) {
+        const productoEliminado = await db.juegos.destroy({where: {id: req.params.id}})
+        res.redirect('/')
     }
+        
 }
 
 // Controlador sin Base de Datos 

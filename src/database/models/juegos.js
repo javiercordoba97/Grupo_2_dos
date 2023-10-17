@@ -5,8 +5,8 @@ module.exports = (sequelize, dataTypes) => {
     let cols = {
         id: {
             type: dataTypes.INTEGER,
-            primeryKey: true,
-            autoIncrement: true,
+            primaryKey: true,
+            autoIncrement: true
         },
         nombre:{
             type: dataTypes.STRING
@@ -24,25 +24,31 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(255)
         },
         fecha:{
-            type: dataTypes.DATETIME
+            type: dataTypes.DATEONLY
         },
         rating:{
             type: dataTypes.DECIMAL(8, 2)
         },
         created:{
-            type: dataTypes.DATETIME
+            type: dataTypes.DATEONLY
         },
         updated:{
-            type: dataTypes.DATETIME
+            type: dataTypes.DATEONLY
         },
         deleted:{
-            type: dataTypes.DATETIME
+            type: dataTypes.DATEONLY
         },
-        id_genero:{/* FK */}
+        /*id_genero:{
+            type: dataTypes.STRING
+        }*/
     }
     let config = {
         tableName: "juegos",
-        timestamps: false,
+        timestamps: true,
+        paranoid: true,
+        //deletedAt: deleted,
+        //createdAt: created,
+        //epdatedAt: updated
     }
     const juegos = sequelize.define(alias, cols, config)
 
