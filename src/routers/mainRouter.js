@@ -16,6 +16,7 @@ const storage = multer.diskStorage({
 const uploadFile = multer({storage})
 
 router.get('/', mainController.home );
+router.get('/deportesyCarreras', mainController.deportes);
 
 
 module.exports = router;

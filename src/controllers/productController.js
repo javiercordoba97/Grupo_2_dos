@@ -11,7 +11,7 @@ let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/pro
 // Controlador con Base de Datos 
 const productController = {
     detalle: async (req, res) => {
-        let productoEncontrado = await db.juegos.findByPk(req.params.id)
+        let productoEncontrado = await db.juegos.findByPk(req.params.id, {paranoid: false})
         res.render ('products/product', {producto: productoEncontrado})
     },
     cart: async (req, res) => {
@@ -55,8 +55,11 @@ const productController = {
     deleteProcess: async function (req, res) {
         const productoEliminado = await db.juegos.destroy({where: {id: req.params.id}})
         res.redirect('/')
-    }
-        
+    },
+    restauracion: async function (req, res) {
+        const productoRestaurado = await db.juegos.restore({where: {id: req.params.id}})
+        res.redirect('/')
+    }         
 }
 
 // Controlador sin Base de Datos 

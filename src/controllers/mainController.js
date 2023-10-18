@@ -15,6 +15,10 @@ const controller = {
         })
         res.render('products/home',{productos: productosNoDelete})
     },
+    deportes: async function (req, res) {
+        let productoEncontrado = await db.juegos.findAll({where: {categoria: req.params.categoria}})
+        res.render ('products/deportesyCarreras', {producto: productoEncontrado})
+    }
 }
 
 
