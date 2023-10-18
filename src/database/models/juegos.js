@@ -24,7 +24,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(255)
         },
         fecha:{
-            type: dataTypes.DATEONLY
+            type: dataTypes.DATE
         },
         rating:{
             type: dataTypes.DECIMAL(8, 2)
@@ -37,18 +37,15 @@ module.exports = (sequelize, dataTypes) => {
         },
         deleted:{
             type: dataTypes.DATEONLY
-        },
-        /*id_genero:{
-            type: dataTypes.STRING
-        }*/
+        }
     }
     let config = {
         tableName: "juegos",
         timestamps: true,
         paranoid: true,
-        //deletedAt: deleted,
-        //createdAt: created,
-        //epdatedAt: updated
+        deletedAt: "deleted",
+        createdAt: "created",
+        updatedAt: "updated"
     }
     const juegos = sequelize.define(alias, cols, config)
 

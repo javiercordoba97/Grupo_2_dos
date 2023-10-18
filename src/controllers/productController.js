@@ -8,7 +8,7 @@ const juegos = db.juegos
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8'))
 
 
-// Controlador con Base de Datos, faltan agregar creación, edición y delete 
+// Controlador con Base de Datos 
 const productController = {
     detalle: async (req, res) => {
         let productoEncontrado = await db.juegos.findByPk(req.params.id)
@@ -20,19 +20,16 @@ const productController = {
     creacion: (req, res) =>{
         res.render('products/creacion')
     },
-    //Hay que poner completar todas las propiedades acorde a las columnas de la base de datos
+
     crearProcess: async function (req,res) {
         let productoNuevo = await db.juegos.create({
-            "id":listaProductos.length+1,
             "nombre": req.body.nombre,
             "precio": req.body.precio,
-            "descuento": req.body.descuento,
             "imagen": req.file ? req.file.filename : "default.png",
             "estreno": req.body.fecha,
             "categoria": req.body.id_genero,
             "descripcion": req.body.descripcion,
-            "rating": req.body.rating,
-            "borrado": false 
+            "rating": req.body.rating
         })
         res.redirect('/product/' + productoNuevo.id)
     },

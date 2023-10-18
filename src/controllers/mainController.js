@@ -10,7 +10,6 @@ let listaUsuarios = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/user
 const controller = {
     home: async (req, res)=>{
         let productosNoDelete = await db.juegos.findAll({
-            where: {deleted: {[db.Sequelize.Op.is]:false}},
             order: [['rating', 'DESC' ]],
             limit: 12
         })
