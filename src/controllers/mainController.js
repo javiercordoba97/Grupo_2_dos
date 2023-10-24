@@ -1,6 +1,6 @@
 let fs = require('fs')
 let path = require('path')
-const { Sequelize } = require('../database/models')
+const {Sequelize} = require('../database/models')
 const db = require("../database/models")
 
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8')) 
@@ -9,14 +9,14 @@ let listaUsuarios = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/user
 
 const controller = {
     home: async (req, res)=>{
-        let productosNoDelete = await db.juegos.findAll({
+        let productosNoDelete = await db.Juego.findAll({
             order: [['rating', 'DESC' ]],
             limit: 12
         })
         res.render('products/home',{productos: productosNoDelete})
     },
     deportes: async function (req, res) {
-        let productoEncontrado = await db.juegos.findAll({where: {categoria: req.params.categoria}})
+        let productoEncontrado = await db.Juego.findAll({where: {categoria: req.params.categoria}})
         res.render ('products/deportesyCarreras', {producto: productoEncontrado})
     }
 }

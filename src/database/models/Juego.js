@@ -1,7 +1,7 @@
 const { Sequelize } = require(".")
 
 module.exports = (sequelize, dataTypes) => {
-    let alias = "juegos"
+    let alias = "Juego"
     let cols = {
         id: {
             type: dataTypes.INTEGER,
@@ -47,8 +47,8 @@ module.exports = (sequelize, dataTypes) => {
         createdAt: "created",
         updatedAt: "updated"
     }
-    const juegos = sequelize.define(alias, cols, config)
+    const Juego = sequelize.define(alias, cols, config)
 
 
-    return juegos
+    return Juego
 } 

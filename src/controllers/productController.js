@@ -1,17 +1,17 @@
 let fs = require('fs')
 let path = require('path')
 const db = require("../database/models")
-//No estoy del todo seguro si hay que agregar esta const de juegos
-const juegos = db.juegos
+const { body } = require('express-validator')
+const juegos = db.Juego
 
-// Cambiar la lista de productos del JSON a DB 
+
 let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/productos.json'),'utf-8'))
 
 
 // Controlador con Base de Datos 
 const productController = {
     detalle: async (req, res) => {
-        let productoEncontrado = await db.juegos.findByPk(req.params.id, {paranoid: false})
+        let productoEncontrado = await juegos.findByPk(req.params.id, {paranoid: false})
         res.render ('products/product', {producto: productoEncontrado})
     },
     cart: async (req, res) => {
@@ -22,23 +22,25 @@ const productController = {
     },
 
     crearProcess: async function (req,res) {
-        let productoNuevo = await db.juegos.create({
+        let productoNuevo = await db.Juego.create({
             "nombre": req.body.nombre,
             "precio": req.body.precio,
             "imagen": req.file ? req.file.filename : "default.png",
-            "estreno": req.body.fecha,
-            "categoria": req.body.id_genero,
+            "fecha": req.body.estreno,
+            "id_genero": req.body.categoria,
             "descripcion": req.body.descripcion,
-            "rating": req.body.rating
+            "rating": req.body.rating,
+            "stock": true
+            
         })
-        res.redirect('/product/' + productoNuevo.id)
+        res.redirect('/' /*'/product/' + productoNuevo.id*/)
     },
     edicion: async function (req, res) {
-        let productoEncontrado = await db.juegos.findByPk(req.params.id)
+        let productoEncontrado = await juegos.findByPk(req.params.id)
         res.render ('/edicion', {producto: productoEncontrado})
     },
     editarProcess: async function (req,res) {
-        let productoEncontrado = await db.juegos.update({
+        let productoEncontrado = await juegos.update({
             "id": productoEncontrado.id,
             "nombre": req.body.nombre,
             "precio": req.body.precio,
@@ -53,11 +55,11 @@ const productController = {
         res.redirect('/product/' + productoEncontrado.id)
     },
     deleteProcess: async function (req, res) {
-        const productoEliminado = await db.juegos.destroy({where: {id: req.params.id}})
+        const productoEliminado = await juegos.destroy({where: {id: req.params.id}})
         res.redirect('/')
     },
     restauracion: async function (req, res) {
-        const productoRestaurado = await db.juegos.restore({where: {id: req.params.id}})
+        const productoRestaurado = await juegos.restore({where: {id: req.params.id}})
         res.redirect('/')
     }         
 }

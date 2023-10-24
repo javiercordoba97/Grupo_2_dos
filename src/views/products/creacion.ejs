@@ -9,7 +9,7 @@
       <main class="login">
         <div class="login-container">
           <h1>Vende tu Juego!</h1>
-          <form id="product-form" action="/creacion" method="post" enctype="multipart/form-data">
+          <form id="product-form" action="/create" method="post" enctype="multipart/form-data">
             <label for="titulo">Nombre del producto</label>
             <input type="text" id="titulo" name="titulo" required>
 
@@ -17,9 +17,6 @@
             <label for="image">Imagen</label>
             <input type="file" id="image" name="image" accept="image/*">
 
-
-            <label for="descuento">Descuento</label>
-            <input type="text" id="descuento" name="descuento" required>
 
             <label for="precio">Precio</label>
             <input type="number" id="precio" name="precio" required>
