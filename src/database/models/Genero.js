@@ -16,8 +16,14 @@ module.exports = (sequelize, dataTypes) => {
         tableName: "generos",
         timestamps: false,
     }
-    const generos = sequelize.define(alias, cols, config)
+    const Genero = sequelize.define(alias, cols, config)
 
+    Genero.associate = function(models){
+        Genero.hasMany(models.Juego,{
+            foreignKey: "genero_id",
+            as: "Juegos"
+        })
+    }
 
     return generos
 } 

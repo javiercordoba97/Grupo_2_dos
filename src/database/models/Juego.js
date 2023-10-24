@@ -49,6 +49,12 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Juego = sequelize.define(alias, cols, config)
 
+    Juego.associate = function(models){
+        Juego.belongsTo(models.Genero,{
+            foreignKey: "genero_id",
+            as: "Genero"
+        })
+    }
 
     return Juego
 } 
