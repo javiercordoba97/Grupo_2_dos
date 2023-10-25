@@ -16,14 +16,14 @@ module.exports = (sequelize, dataTypes) => {
         tableName: "generos",
         timestamps: false,
     }
-    const Genero = sequelize.define(alias, cols, config)
+    const generos = sequelize.define(alias, cols, config)
 
-    Genero.associate = function(models){
-        Genero.hasMany(models.Juego,{
-            foreignKey: "genero_id",
+    generos.associate = function(models){
+        generos.hasMany(models.Juego,{
+            foreignKey: "id_genero",
             as: "Juegos"
         })
-    }
+    } 
 
     return generos
 } 
