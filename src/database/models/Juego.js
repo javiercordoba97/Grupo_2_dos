@@ -1,4 +1,3 @@
-const { Sequelize } = require(".")
 
 module.exports = (sequelize, dataTypes) => {
     let alias = "Juego"
