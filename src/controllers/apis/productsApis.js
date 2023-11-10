@@ -25,7 +25,12 @@ const controller ={
             res.json(respuesta)
     },
     detail: async (req,res)=>{
-        res.json()
+        let product = await db.Product.findByPk(req.params.id);
+        let respuesta = {
+            ...product,
+            url_imagen: "img/products/"+product.img,
+        }
+        res.json(respuesta)
     },
 }
 module.exports = controller

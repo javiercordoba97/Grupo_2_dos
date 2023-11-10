@@ -19,7 +19,7 @@ const controller ={
         req.json(respuesta)
     },
     detail: async (req,res)=>{
-        let user = await db.User.findByPk(req.params.id,{attributes:{exclude:["id_rol","password"]}});
+        let user = await db.Usuario.findByPk(req.params.id,{attributes:{exclude:["id_rol","password"]}});
         let respuesta = {
             ...user,
             url_imagen: "img/users/"+user.img,
