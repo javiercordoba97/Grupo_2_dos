@@ -5,6 +5,8 @@ const productRouter = require('./routers/productRouter');
 const userRouter = require('./routers/userRouter');
 const app=express();
 const methodOverride = require('method-override');
+const apiUser = require("./routers/apis/userRouteApis");
+const apiProduct = require("./routers/apis/productRouteApis");
 
 app.use(express.static("public"));
 app.use(methodOverride('_method'));
@@ -19,3 +21,6 @@ app.listen(3000,()=> console.log("server on"));
 app.use(mainRouter);
 app.use(productRouter);
 app.use(userRouter);
+
+app.use("/api/user", apiUser);
+app.use("/api/product",apiProduct);
