@@ -156,6 +156,15 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .invalid {
+    border: 3px solid rgb(225, 9, 9);
+  }
+  .error{
+    color:rgb(58, 9, 9);
+    background-color: rgb(212, 100, 100) ;
+    border: 3px solid rgb(225, 9, 9);
+  }
 /*__________BREACKPOINT________*/
 @media (min-width: 481px){
   .login-container{
