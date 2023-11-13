@@ -9,9 +9,9 @@
       <main class="login">
         <div class="login-container">
           <h1>Vender Juego!</h1>
-          <form id="product-form" action="/create" method="post" enctype="multipart/form-data">
+          <form class= form id="product-form" action="/create" method="post" enctype="multipart/form-data">
             <label for="titulo">Nombre del producto</label>
-            <input type="text" id="titulo" name="titulo" required>
+            <input type="text" id="titulo" name="titulo" >
 
 
             <label for="image">Imagen</label>
@@ -19,14 +19,14 @@
 
 
             <label for="precio">Precio</label>
-            <input type="number" id="precio" name="precio" required>
+            <input type="number" id="precio" name="precio" >
 
             <label for="stock">Stock</label>
-            <input type="number" id="stock" name="stock" required>
+            <input type="number" id="stock" name="stock" >
 
             
             <label for="categoria">Seleciona la categoria</label>
-            <select id="categoria" name="categoria" required>
+            <select id="categoria" name="categoria" >
               <option>Aventuras</option>
               <option>Acción</option>
               <option>Juego de MMO</option>
@@ -39,10 +39,10 @@
             <input type="date" id="estreno" name="estreno" required>
 
             <label for="rating">Rating</label>
-            <input type="number" id="rating" name="rating" required>
+            <input type="number" id="rating" name="rating" >
 
             <label for="descripcion">Descripción</label>
-            <input id="descripcion" name="descripcion" required>
+            <input id="descripcion" name="descripcion" >
 
             <button type="submit">Vender</button>
           </form>
@@ -53,6 +53,7 @@
 </main>
 
 <%- include("../partials/footer") %>
+<script src="/js/loginValidation.js"></script>
   </body>
 
   </html>

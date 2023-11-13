@@ -21,23 +21,23 @@ window.onload = function(){
         } else{
             form.password.classList.remove("invalid")
         }
-        if(form.confirmPassword.value==""){
-            form.confirmPassword.classList.add("invalid")
-        } else{
-            form.confirmPassword.classList.remove("invalid")
-        }
-        console.log(form.confirmPassword.value)
-        console.log(form.password.value)
+        /*console.log(form.confirmPassword.value)
+        console.log(form.password.value)*/
         if(form.confirmPassword.value!=form.password.value){
             form.confirmPassword.classList.add("invalid")
             const err = document.querySelector(".err")
             err.innerHTML = "<li>Password must match</li>"
-            err.classList.add("error")
+            err.classList.add("alert_warning")
         } else{
             form.confirmPassword.classList.remove("invalid")
             const err = document.querySelector(".err")
             err.innerHTML =""
-            err.classList.remove("error")
+            err.classList.remove("alert_warning")
+        }
+        if(form.confirmPassword.value=="" || form.confirmPassword.value!=form.password.value){
+            form.confirmPassword.classList.add("invalid")
+        } else{
+            form.confirmPassword.classList.remove("invalid")
         }
         if(form.dni.value==""){
             form.dni.classList.add("invalid")

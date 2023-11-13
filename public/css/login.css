@@ -165,6 +165,13 @@ body {
     background-color: rgb(212, 100, 100) ;
     border: 3px solid rgb(225, 9, 9);
   }
+  .alert_warning{
+    color:#842029;
+    background-color: #F8D7DA;
+    text-align: center;
+    border-radius: 10px;
+  }
+
 /*__________BREACKPOINT________*/
 @media (min-width: 481px){
   .login-container{
