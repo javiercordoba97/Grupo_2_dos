@@ -28,6 +28,8 @@ Sprint 3 Retro. Veo que la comunicacion está fluyendo mas entre el equipo. No e
 
 Sprint 4 Retro. Notable mejora en la organización de Trello, y en la división de tareas. Nos falta trabajar mas en conjunto, pero vamos avanzando completando las tareas por separado.
 
+Sprint 5 Retro. Avanzamos en las tareas, no tanto en las reuniones, ni en la coordinacion del trabajo, pero se lograron objetivos parciales
+
 ### Guido Salustri
 
 Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
