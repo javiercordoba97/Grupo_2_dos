@@ -9,34 +9,34 @@
 
             <main class="detalle">
                 <div class="juego">
-                    <img class="ImagenJuego" src="/img/products/<%= producto.img %>" alt="">
+                    <img class="ImagenJuego" src="/img/products/<%= productoEncontrado.imagen %>" alt="">
                     <div class="descripcion">
                         <ul>
                             <li>
                                 <h2>
-                                    <%= producto.titulo %>
+                                    <%= productoEncontrado.titulo %>
                                 </h2>
                             </li>
                             <div class="tituloJuego">
                                 <li>
                                     <h3>
-                                        <%= producto.precio %>
+                                        <%= productoEncontrado.precio %>
                                     </h3>
                                 </li>
-                                <li>en 12x $<%= (producto.precio/12).toFixed(2) %>
+                                <li>en 12x $<%= (productoEncontrado.precio/12).toFixed(2) %>
                                 </li>
                             </div>
                             <div class="datosJuego">
-                                <li>Multijugador: <%= producto.multijugador %>
+                                <li>Multijugador: <%= productoEncontrado.multijugador %>
                                 </li>
-                                <li>Online: <%= producto.online %>
+                                <li>Online: <%= productoEncontrado.online %>
                                 </li>
                                 <li><button class="botonDeCompra">Agregar al Carrito</button></li>
                             </div>
-                            <form action="/edicion/<%= producto.id %>">
+                            <form action="/edicion/<%= productoEncontrado.id %>">
                                 <li><button class="botonDeEdicion">Editar Producto</button></li>
                             </form>
-                            <form action="/edicion/<%=producto.id%>?_method=Delete" method="post">
+                            <form action="/edicion/<%=productoEncontrado.id%>?_method=Delete" method="post">
                                 <li><button class="delete" type="submit">Eliminar Producto</button></li>
                             </form>
                             
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <p class="detalle">
-                    <%= producto.description %>
+                    <%= productoEncontrado.description %>
                 </p>
             </main>
 

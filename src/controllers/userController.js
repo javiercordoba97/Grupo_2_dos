@@ -23,7 +23,6 @@ const userController = {
             "email": req.body.email,
             "contraseña": bcrypt.hashSync (req.body.password, 10),
             "telefono": req.body.name,
-            "email": req.body.email,
             "borrado": false
     })
         listaUsuarios.push(usuarioNuevo)
