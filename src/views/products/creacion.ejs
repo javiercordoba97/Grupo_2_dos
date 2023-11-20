@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+  <body>
+
+    <%- include("../partials/header") %>
+      <main class="login">
+        <div class="login-container">
+          <h1>Vende tu Juego!</h1>
+          <form id="product-form" action="/creacion" method="POST" enctype="multipart/form-data">
+            <label for="titulo">Nombre del producto</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+
+            <label for="image">Imagen</label>
+            <input type="file" id="image" name="image" accept="image">
+
+
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio" required>
+
+            
+            <label for="categoria">Seleciona la categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="1">Aventuras</option>
+              <option value="2">Acción</option>
+              <option value="3">Juego de MMO</option>
+              <option value="4">Estrategia</option>
+              <option value="5">Coopertativos</option>
+              <option value="6">Deportes y Carreras</option>
+            </select>
+
+            <label for="estreno">Fecha de lanzamiento</label>
+            <input type="date" id="estreno" name="estreno" required>
+
+            <label for="rating">Rating</label>
+            <input type="number" id="rating" name="rating" required>
+
+            <label for="descripcion">Descripción</label>
+            <input id="descripcion" name="descripcion" required>
+
+            <button type="submit">Vender</button>
+          </form>
+        </div>
+        <script src="script.js"></script>
+
+</html>
+</main>
+
+<%- include("../partials/footer") %>
+  </body>
+
+  </html>
