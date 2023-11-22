@@ -33,7 +33,7 @@ const productController = {
             "rating": req.body.rating,
             "stock": true
         })
-        res.redirect('/' /*'/product/' + productoNuevo.id*/)
+        res.redirect('/product/' + productoNuevo.id)
     },
     edicion: async function (req, res) {
         let productoEncontrado = await juegos.findByPk(req.params.id)
@@ -44,7 +44,6 @@ const productController = {
             "id": productoEncontrado.id,
             "nombre": req.body.nombre,
             "precio": req.body.precio,
-            "descuento": req.body.descuento,
             "imagen": req.file ? req.file.filename : "default.png",
             "estreno": req.body.fecha,
             "id_genero": req.body.categoria,

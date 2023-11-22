@@ -17,5 +17,6 @@ window.onload = function(){
         } else{
             form.precio.classList.remove("invalid")
         }
+        form.submit()
     })
 }
