@@ -39,26 +39,16 @@ window.onload = function(){
         } else{
             form.confirmPassword.classList.remove("invalid")
         }
-        if(form.dni.value==""){
-            form.dni.classList.add("invalid")
-        } else{
-            form.dni.classList.remove("invalid")
-        }
         if(form.tel.value==""){
             form.tel.classList.add("invalid")
         } else{
             form.tel.classList.remove("invalid")
-        }
-        if(form.address.value==""){
-            form.address.classList.add("invalid")
-        } else{
-            form.address.classList.remove("invalid")
         }
         if(form.email.value==""){
             form.email.classList.add("invalid")
         } else{
             form.email.classList.remove("invalid")
         }
-
+        form.submit()
     })
 }

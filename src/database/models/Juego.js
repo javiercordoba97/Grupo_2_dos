@@ -36,6 +36,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         deleted:{
             type: dataTypes.DATEONLY
+        },
+        id_genero:{
+            type: dataTypes.INTEGER
         }
     }
     let config = {

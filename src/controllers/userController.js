@@ -15,6 +15,7 @@ const userController = {
         res.render('users/login')
     },
     registerProcess: async (req,res)=>{
+        console.log(req.body)
         let usuarioNuevo = await usuario.create({
             "id":Date.now() + Math.round(Math.random()* 1E9),
             "foto": req.file ? req.file.filename : "defaultUsers.png",
@@ -23,11 +24,11 @@ const userController = {
             "email": req.body.email,
             "contraseña": bcrypt.hashSync (req.body.password, 10),
             "telefono": req.body.name,
-            "email": req.body.email,
-            "borrado": false
+            "borrado": false,
+            "id_rol": 2
     })
-        listaUsuarios.push(usuarioNuevo)
-        fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
+        //listaUsuarios.push(usuarioNuevo)
+        //fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
         res.redirect('/')
         
     },

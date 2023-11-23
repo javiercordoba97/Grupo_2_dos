@@ -12,7 +12,7 @@ let listaProductos = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/pro
 const productController = {
     detalle: async (req, res) => {
         let productoEncontrado = await juegos.findByPk(req.params.id, {paranoid: false})
-        res.render ('products/product', {producto: productoEncontrado})
+        res.render ('products/product', {productoEncontrado})
     },
     cart: async (req, res) => {
         res.render('products/cart')
@@ -21,9 +21,10 @@ const productController = {
         res.render('products/creacion')
     },
 
-    crearProcess: async function (req,res) {
+    crearProcess: async function (req,res){
+        console.log(req.body)
         let productoNuevo = await db.Juego.create({
-            "nombre": req.body.nombre,
+            "nombre": req.body.titulo,
             "precio": req.body.precio,
             "imagen": req.file ? req.file.filename : "default.png",
             "fecha": req.body.estreno,
@@ -31,9 +32,8 @@ const productController = {
             "descripcion": req.body.descripcion,
             "rating": req.body.rating,
             "stock": true
-            
         })
-        res.redirect('/' /*'/product/' + productoNuevo.id*/)
+        res.redirect('/product/' + productoNuevo.id)
     },
     edicion: async function (req, res) {
         let productoEncontrado = await juegos.findByPk(req.params.id)
@@ -44,13 +44,13 @@ const productController = {
             "id": productoEncontrado.id,
             "nombre": req.body.nombre,
             "precio": req.body.precio,
-            "descuento": req.body.descuento,
             "imagen": req.file ? req.file.filename : "default.png",
             "estreno": req.body.fecha,
-            "categoria": req.body.id_genero,
+            "id_genero": req.body.categoria,
             "descripcion": req.body.descripcion,
             "rating": req.body.rating,
-            "borrado": false 
+            "stock": true,
+            "borrado": false
         }, {where: {id: req.params.id}})
         res.redirect('/product/' + productoEncontrado.id)
     },

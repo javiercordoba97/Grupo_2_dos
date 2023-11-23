@@ -8,41 +8,38 @@
     <%- include("../partials/header") %>
       <main class="login">
         <div class="login-container">
-          <h1>Vender Juego!</h1>
-          <form class= form id="product-form" action="/create" method="post" enctype="multipart/form-data">
+          <h1>Vende tu Juego!</h1>
+          <form id="product-form" action="/creacion" method="POST" enctype="multipart/form-data">
             <label for="titulo">Nombre del producto</label>
-            <input type="text" id="titulo" name="titulo" >
+            <input type="text" id="titulo" name="titulo" required>
 
 
             <label for="image">Imagen</label>
-            <input type="file" id="image" name="image" accept="image/*">
+            <input type="file" id="image" name="image" accept="image">
 
 
             <label for="precio">Precio</label>
-            <input type="number" id="precio" name="precio" >
-
-            <label for="stock">Stock</label>
-            <input type="number" id="stock" name="stock" >
+            <input type="number" id="precio" name="precio" required>
 
             
             <label for="categoria">Seleciona la categoria</label>
-            <select id="categoria" name="categoria" >
-              <option>Aventuras</option>
-              <option>Acción</option>
-              <option>Juego de MMO</option>
-              <option>Estrategia</option>
-              <option>Coopertativos</option>
-              <option>Deportes y Carreras</option>
+            <select id="categoria" name="categoria" required>
+              <option value="1">Aventuras</option>
+              <option value="2">Acción</option>
+              <option value="3">Juego de MMO</option>
+              <option value="4">Estrategia</option>
+              <option value="5">Coopertativos</option>
+              <option value="6">Deportes y Carreras</option>
             </select>
 
             <label for="estreno">Fecha de lanzamiento</label>
             <input type="date" id="estreno" name="estreno" required>
 
             <label for="rating">Rating</label>
-            <input type="number" id="rating" name="rating" >
+            <input type="number" id="rating" name="rating" required>
 
             <label for="descripcion">Descripción</label>
-            <input id="descripcion" name="descripcion" >
+            <input id="descripcion" name="descripcion" required>
 
             <button type="submit">Vender</button>
           </form>
@@ -53,7 +50,6 @@
 </main>
 
 <%- include("../partials/footer") %>
-<script src="/js/loginValidation.js"></script>
   </body>
 
   </html>
