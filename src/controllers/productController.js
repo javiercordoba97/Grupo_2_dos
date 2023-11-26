@@ -37,11 +37,10 @@ const productController = {
     },
     edicion: async function (req, res) {
         let productoEncontrado = await juegos.findByPk(req.params.id)
-        res.render ('/edicion', {producto: productoEncontrado})
+        res.render ('./products/edicion', {productoEncontrado: productoEncontrado})
     },
     editarProcess: async function (req,res) {
         let productoEncontrado = await juegos.update({
-            "id": productoEncontrado.id,
             "nombre": req.body.nombre,
             "precio": req.body.precio,
             "imagen": req.file ? req.file.filename : "default.png",
@@ -52,7 +51,7 @@ const productController = {
             "stock": true,
             "borrado": false
         }, {where: {id: req.params.id}})
-        res.redirect('/product/' + productoEncontrado.id)
+        res.redirect('/product/' + req.params.id)
     },
     deleteProcess: async function (req, res) {
         const productoEliminado = await juegos.destroy({where: {id: req.params.id}})

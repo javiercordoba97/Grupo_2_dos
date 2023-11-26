@@ -9,34 +9,39 @@
       <main class="login">
         <div class="login-container">
           <h1>Editar Producto</h1>
-          <form action="/edicion/<%=producto.id%>?_method=put" method="post" enctype="multipart/form-data">
+          <form action="/edicion/<%=productoEncontrado.id%>?_method=put" method="POST" enctype="multipart/form-data">
 
-            <label for="titulo">Nombre del producto:</label>
-            <input value=<%=producto.titulo%>  id="titulo" name="titulo">
-
+            <label for="nombre">Nombre del producto:</label>
+            <input value="<%=productoEncontrado.nombre%>"  id="nombre" name="nombre">
 
             <label for="image">Imagen:</label>
-            <input value=<%=producto.img%> type="file" id="image" name="image" accept="image/*">
-
-
-            <label for="descuento">decuento:</label>
-            <input value=<%=producto.descuento %> type="text" id="descuento" name="descuento" required>
+            <input value="<%=productoEncontrado.imagen%>" type="file" id="image" name="image" accept="image/*">
 
             <label for="precio">Precio:</label>
-            <input value=<%=producto.precio%> type="number" id="precio" name="precio" required>
+            <input value="<%=productoEncontrado.precio%>" type="number" id="precio" name="precio" required>
 
-            <label for="multijugador">Multijugador:</label>
-            <input value=<%=producto.multijugador%> id="multijugador" name="multijugador" required>
+            <label for="categoria">Seleciona la categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="1">Aventuras</option>
+              <option value="2">Acción</option>
+              <option value="3">Juego de MMO</option>
+              <option value="4">Estrategia</option>
+              <option value="5">Coopertativos</option>
+              <option value="6">Deportes y Carreras</option>
+            </select>
 
-            <label for="online">Online:</label>
-            <input value=<%=producto.online %> id="online" name="online" required>
+            <label for="estreno">Fecha de lanzamiento</label>
+            <input type="date" id="estreno" name="estreno" required>
+
+            <label for="rating">Rating</label>
+            <input type="number" id="rating" name="rating" required>
 
             <label for="description">Descripción:</label>
-            <input value=<%=producto.description%> id="description" name="description" required>
+            <input value="<%=productoEncontrado.descripcion%>" id="description" name="description" required>
 
             <button type="submit">Editar</button>
           </form>
-          <form action="/edicion/<%=producto.id%>?_method=Delete" method="post">
+          <form action="/edicion/<%=productoEncontrado.id%>?_method=Delete" method="post">
             <button class="delete" type="submit">Delete</button>
           </form>
         </div>

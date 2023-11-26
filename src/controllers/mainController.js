@@ -17,7 +17,7 @@ const controller = {
     },
     deportes: async function (req, res) {
         let productoEncontrado = await db.Juego.findAll({where: {categoria: req.params.categoria}})
-        res.render ('products/deportesyCarreras', {producto: productoEncontrado})
+        res.render ('products/deportesyCarreras', {productoEncontrado: productoEncontrado})
     }
 }
 

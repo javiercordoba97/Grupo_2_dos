@@ -27,15 +27,11 @@
                                 </li>
                             </div>
                             <div class="datosJuego">
-                                <li>Multijugador: <%= productoEncontrado.multijugador %>
-                                </li>
-                                <li>Online: <%= productoEncontrado.online %>
-                                </li>
                                 <li><button class="botonDeCompra">Agregar al Carrito</button></li>
                             </div>
-                            <form action="products/edicion/<%= productoEncontrado.id %>">
+                            <a href="/products/edicion/<%= productoEncontrado.id %>">
                                 <li><button class="botonDeEdicion">Editar Producto</button></li>
-                            </form>
+                            </a>
                             <form action="/edicion/<%=productoEncontrado.id%>?_method=Delete" method="post">
                                 <li><button class="delete" type="submit">Eliminar Producto</button></li>
                             </form>
@@ -46,7 +42,7 @@
                     </div>
                 </div>
                 <p class="detalle">
-                    <%= productoEncontrado.description %>
+                    <%= productoEncontrado.descripcion %>
                 </p>
             </main>
 
