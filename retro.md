@@ -30,6 +30,12 @@ Sprint 4 Retro. Notable mejora en la organización de Trello, y en la división 
 
 Sprint 5 Retro. Avanzamos en las tareas, no tanto en las reuniones, ni en la coordinacion del trabajo, pero se lograron objetivos parciales
 
+Sprint 6 Retro. Fue un Sprint complicado, no llegamos a terminarlo, un poco por tareas personales de cada integrante, y otro poco por que entendimos que todo lo de este Sprint, se volvía a hacer en los Sprint siguientes. Tarea a futuro.
+
+Sprint 7 Retro. Mucho mas aceitado el tema grupo, se dividieron tareas llegando a los objetivos, gran avance en la comunicación. Mejora significativa de Trello.
+
+Sprint 8 Retro. Se terminó Reac rápido, lo que nos dejó tiempo para poder ir mejorando estética y funcionamiento de lo realizado previamente, y terminando lo que estaba incompleto de los Sprint anteriores. Muy conforme con la tarea que realizamos como grupo.
+
 ### Guido Salustri
 
 Sprint 1. Deberiamos mejorar la comunicacion del grupo y planificar mejor el desarrollo del sprit, logrando dividir mas eficientemente las tareas y trabajar de forma mas coordinada.
