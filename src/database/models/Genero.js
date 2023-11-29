@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
     generos.associate = function(models){
         generos.hasMany(models.Juego,{
             foreignKey: "id_genero",
-            as: "Juego"
+            as: "Juegos"
         })
     } 
 
