@@ -40,8 +40,8 @@ const userController = {
         }
         res.redirect('/')
     },
-    ingresar: (req,res)=>{
-        res.render('/')
+    sessionProcess: (req,res)=>{
+        res.redirect('/')
     },
 
     profile: async (req, res)=>{

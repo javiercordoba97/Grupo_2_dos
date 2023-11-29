@@ -22,10 +22,9 @@ router.get('/profile/:id', userController.profile );
 router.get('/edicionUsuario/:id', userController.edicionUsuario);
 router.get('/session', userController.session);
 
-
 router.post('/register',uploadFile.single("userImage") ,userController.registerProcess);
 
-router.post('/session', userController.session);
+router.post('/session', userController.sessionProcess);
 
 
 router.put('/edicionUsuario/:id',uploadFile.single("userImage"), userController.editarUsuario)
