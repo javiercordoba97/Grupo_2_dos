@@ -7,11 +7,15 @@ const app=express();
 const methodOverride = require('method-override');
 const apiUser = require("./routers/apis/userRouteApis");
 const apiProduct = require("./routers/apis/productRouteApis");
+const cookie = require('cookie-parser');
+const session = require('express-session');
 
 app.use(express.static("public"));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cookie());
+app.use(session({secret:"secreto", resave: false, saveUnitialize: false}));
 
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');

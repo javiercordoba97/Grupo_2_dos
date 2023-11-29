@@ -19,10 +19,14 @@ const uploadFile = multer({storage})
 router.get('/register', userController.register );
 router.get('/login', userController.login );
 router.get('/profile/:id', userController.profile );
-router.get('/edicionUsuario/:id', userController.edicionUsuario)
+router.get('/edicionUsuario/:id', userController.edicionUsuario);
+router.get('/session', userController.session);
 
 
 router.post('/register',uploadFile.single("userImage") ,userController.registerProcess);
+
+router.post('/session', userController.session);
+
 
 router.put('/edicionUsuario/:id',uploadFile.single("userImage"), userController.editarUsuario)
 

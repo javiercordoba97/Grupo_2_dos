@@ -32,6 +32,18 @@ const userController = {
         res.redirect('/')
         
     },
+    session: (req,res)=>{
+        if(req.body.email){
+            req.session.usuario = req.body
+            res.cookie('usuario', req.body.email, {maxAge:300000})
+            res.render('/')
+        }
+        res.redirect('/')
+    },
+    ingresar: (req,res)=>{
+        res.render('/')
+    },
+
     profile: async (req, res)=>{
         let usuarioEncontrado = await usuario.findfindByPk(req.params.id, {paranoid: false})
         res.render('users/profile', {usuario: usuarioEncontrado})

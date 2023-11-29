@@ -15,13 +15,13 @@
             <input value="<%=productoEncontrado.nombre%>"  id="nombre" name="nombre">
 
             <label for="image">Imagen:</label>
-            <input value="<%=productoEncontrado.imagen%>" type="file" id="image" name="image" accept="image/*">
+            <input value="<%=productoEncontrado.image%>" type="file" id="image" name="image" accept="image/*">
 
             <label for="precio">Precio:</label>
             <input value="<%=productoEncontrado.precio%>" type="number" id="precio" name="precio" required>
 
             <label for="categoria">Seleciona la categoria</label>
-            <select id="categoria" name="categoria" required>
+            <select value="<%=productoEncontrado.categoria%>" id="categoria" name="categoria" required>
               <option value="1">Aventuras</option>
               <option value="2">Acción</option>
               <option value="3">Juego de MMO</option>
@@ -31,10 +31,10 @@
             </select>
 
             <label for="estreno">Fecha de lanzamiento</label>
-            <input type="date" id="estreno" name="estreno" required>
+            <input type="date" value="<%=productoEncontrado.estreno%>" id="estreno" name="estreno" required>
 
             <label for="rating">Rating</label>
-            <input type="number" id="rating" name="rating" required>
+            <input type="number" value="<%=productoEncontrado.rating%>" id="rating" name="rating" required>
 
             <label for="description">Descripción:</label>
             <input value="<%=productoEncontrado.descripcion%>" id="description" name="description" required>
