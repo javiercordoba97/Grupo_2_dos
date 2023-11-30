@@ -8,21 +8,34 @@
         <%- include("../partials/header") %>
             <main>
                 <section class="inicio">
+                <div class="contenidoCat">
+                    <div class="categorias">
+                        <h3 class="categorias">CATEGORIAS</h3>
+                        <ul>
+                            <li><a href="/accion">Acción</a></li>
+                            <li><a href="/aventuras">Aventuras</a></li>
+                            <li><a href="/mmo">Juegos MMO</a></li>
+                            <li><a href="/deportesyCarreras">Deportes y Carreras</a></li>
+                            <li><a href="/estrategia">Estrategia</a></li>
+                            <li><a href="/cooperativos">Coopertativos</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="contenidoPrincipal">
-                    <h3 class="titulares">Deportes y Carreras</h3>
+                    <h3 class="titulares">deportes y Carreras</h3>
                     <div class="productos">
                         <% productos.forEach((p)=>{%>
                             <article class="product">
                                 <a href="/product/<%= p.id %>">
-                                    <img src="/img/products/<%= p.img %>" alt="">
+                                    <img src="/img/products/<%= p.imagen %>" alt="">
                                     <div class="product-info"><i class="fas fa-truck"></i>
                                         <p class="precio"> $ <%= p.precio %>
                                         </p>
-                                        <p class="descuento">
+                                        <!-- <p class="descuento">
                                             <%= p.descuento %> OFF
-                                        </p>
+                                        </p>-->
                                         <h4 class="description">
-                                            <%= p.titulo %>
+                                            <%= p.nombre %>
                                         </h4>
                                     </div>
                                 </a>

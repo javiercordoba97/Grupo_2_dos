@@ -19,6 +19,12 @@ router.get('/cart', productController.cart);
 router.get('/products/edicion/:id', productController.edicion);
 router.get('/creacion', productController.creacion);
 router.get('/restauracion', productController.restauracion);
+router.get('/accion', productController.accion);
+router.get('/aventuras', productController.aventuras);
+router.get('/mmo', productController.mmo);
+router.get('/deportesyCarreras', productController.deportes);
+router.get('/estrategia', productController.estrategia);
+router.get('/cooperativos', productController.cooperativos);
 
 router.post('/creacion', uploadFile.single("image"), productController.crearProcess);
 router.put('/edicion/:id',uploadFile.single("image"), productController.editarProcess);

@@ -60,7 +60,50 @@ const productController = {
     restauracion: async function (req, res) {
         const productoRestaurado = await juegos.restore({where: {id: req.params.id}})
         res.redirect('/')
-    }         
+    },
+    //categorias
+    accion: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 2},
+            limit: 12
+        })
+        res.render('./products/accion',{productos: productosNoDelete})
+    },
+    aventuras: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 1},
+            limit: 12
+        })
+        res.render('./products/aventuras',{productos: productosNoDelete})
+    },
+    mmo: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 3},
+            limit: 12
+        })
+        res.render('./products/mmo',{productos: productosNoDelete})
+    },
+    deportes: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 6},
+            limit: 12
+        })
+        res.render('./products/deportesyCarreras',{productos: productosNoDelete})
+    },
+    estrategia: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 4},
+            limit: 12
+        })
+        res.render('./products/estrategia',{productos: productosNoDelete})
+    },
+    cooperativos: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            where: {id_genero: 5},
+            limit: 12
+        })
+        res.render('./products/cooperativos',{productos: productosNoDelete})
+    },
 }
 
 // Controlador sin Base de Datos 
