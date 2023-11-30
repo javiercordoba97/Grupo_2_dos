@@ -11,9 +11,6 @@ const userController = {
     register: async (req, res)=>{
         res.render('users/register')
     },
-    login: async (req, res)=>{
-        res.render('users/login')
-    },
     registerProcess: async (req,res)=>{
         console.log(req.body)
         let usuarioNuevo = await usuario.create({
@@ -27,12 +24,35 @@ const userController = {
             "borrado": false,
             "id_rol": 2
     })
-        //listaUsuarios.push(usuarioNuevo)
-        //fs.writeFileSync(path.join(__dirname,'../data/users.json'),JSON.stringify(listaUsuarios,null,2),'utf-8')
-        res.redirect('/')
-        
+    const resultValidation = validationResult (req);
+    if (resultValidation.errors.length > 0){
+        return res.render('/register',{
+            errors: resultValidation.mapped(),
+            oldData: req.body
+        });
+        }
+        /*let userInDB = User.findByField('email',req.body.email);
+
+        if (userInDB){
+            return res.render('/register', {
+                errors:{
+                    email:{
+                        msg:'Este email ya esta registrado'
+                    }
+                },
+            oldData: req.body    
+        });
+    }
+    let userToCreate = {
+        ...req.body,
+        password: bcrypt.hashSync(req.body.password, 10),
+        avatar: req.file.filename
+    }
+       let userCreated = User.create(userToCreate);
+       
+       return res.redirect('/');*/
     },
-    session: (req,res)=>{
+    /*session: (req,res)=>{
         if(req.body.email){
             req.session.usuario = req.body
             res.cookie('usuario', req.body.email, {maxAge:300000})
@@ -42,8 +62,24 @@ const userController = {
     },
     sessionProcess: (req,res)=>{
         res.redirect('/')
+    },*/
+    login: async (req, res)=>{
+        res.render('users/login')
     },
+    loginProcess: async (req,res)=>{
+        let userToLogin = usuario.findfindByPk('email', req.body.email);
 
+        if (userToLogin){
+
+        }
+        return res.render('users/login', {
+            errors:{
+                email:{
+                    msg: 'el email no estra registrado'
+                }
+            }
+        })
+    },
     profile: async (req, res)=>{
         let usuarioEncontrado = await usuario.findfindByPk(req.params.id, {paranoid: false})
         res.render('users/profile', {usuario: usuarioEncontrado})

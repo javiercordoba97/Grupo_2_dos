@@ -20,11 +20,12 @@ router.get('/register', userController.register );
 router.get('/login', userController.login );
 router.get('/profile/:id', userController.profile );
 router.get('/edicionUsuario/:id', userController.edicionUsuario);
-router.get('/session', userController.session);
+//router.get('/session', userController.session);
 
 router.post('/register',uploadFile.single("userImage") ,userController.registerProcess);
+router.post('/login', userController.loginProcess)
 
-router.post('/session', userController.sessionProcess);
+//router.post('/session', userController.sessionProcess);
 
 
 router.put('/edicionUsuario/:id',uploadFile.single("userImage"), userController.editarUsuario)
