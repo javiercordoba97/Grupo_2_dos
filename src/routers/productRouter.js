@@ -27,8 +27,8 @@ router.get('/deportesyCarreras', productController.deportes);
 router.get('/estrategia', productController.estrategia);
 router.get('/cooperativos', productController.cooperativos);
 
-router.post('/creacion', uploadFile.single("image"), productController.crearProcess);
-router.put('/edicion/:id',uploadFile.single("image"), productController.editarProcess);
+router.post('/creacion', uploadFile.single("imagen"), productController.crearProcess);
+router.put('/edicion/:id',uploadFile.single("imagen"), productController.editarProcess);
 router.delete('/edicion/:id',productController.deleteProcess);
 
 
