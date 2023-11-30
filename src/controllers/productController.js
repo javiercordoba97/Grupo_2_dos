@@ -62,6 +62,13 @@ const productController = {
         res.redirect('/')
     },
     //categorias
+    novedades: async (req, res)=>{
+        let productosNoDelete = await db.Juego.findAll({
+            order: [['fecha', 'ASC' ]],
+            limit: 12
+        })
+        res.render('./products/novedades',{productos: productosNoDelete})
+    },
     accion: async (req, res)=>{
         let productosNoDelete = await db.Juego.findAll({
             where: {id_genero: 2},

@@ -19,6 +19,7 @@ router.get('/cart', productController.cart);
 router.get('/products/edicion/:id', productController.edicion);
 router.get('/creacion', productController.creacion);
 router.get('/restauracion', productController.restauracion);
+router.get('/novedades', productController.novedades);
 router.get('/accion', productController.accion);
 router.get('/aventuras', productController.aventuras);
 router.get('/mmo', productController.mmo);
